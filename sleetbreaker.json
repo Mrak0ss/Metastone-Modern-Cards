@@ -1,0 +1,26 @@
+{
+  "id": "minion_sleetbreaker",
+  "name": "Sleetbreaker",
+  "baseManaCost": 2,
+  "type": "MINION",
+  "baseAttack": 3,
+  "baseHp": 2,
+  "heroClass": "SHAMAN",
+  "rarity": "RARE",
+  "race": "ELEMENTAL",
+  "description": "Battlecry: Add a Windchill to your hand.",
+  "battlecry": {
+    "targetSelection": "NONE",
+    "spell": {
+      "class": "ReceiveCardSpell",
+      "card": "spell_windchill",
+      "targetPlayer": "SELF"
+    }
+  },
+  "attributes": {
+    "BATTLECRY": true
+  },
+  "collectible": true,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

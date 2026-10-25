@@ -1,0 +1,30 @@
+
+{
+	"id": "minion_sandhoof_waterbearer",
+	"name": "Sandhoof Waterbearer",
+	"baseManaCost": 5,
+	"type": "MINION",
+	"baseAttack": 5,
+	"baseHp": 5,
+	"heroClass": "PRIEST",
+	"rarity": "COMMON",
+	"description": "At the end of your turn, restore 5 Health to a damaged friendly character.",
+	"trigger": {
+		"eventTrigger": {
+			"class": "TurnEndTrigger",
+			"targetPlayer": "SELF"
+		},
+		"spell": {
+			"class": "HealSpell",
+			"target": "FRIENDLY_CHARACTERS",
+			"value": 5,
+			"randomTarget": true,
+			"filter": {
+				"class": "DamagedFilter"
+			}
+		}
+	},
+	"collectible": true,
+	"set": "CUSTOM",
+	"fileFormatVersion": 1
+}

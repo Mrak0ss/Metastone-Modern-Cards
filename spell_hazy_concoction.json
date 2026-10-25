@@ -1,0 +1,18 @@
+{
+	"id": "spell_hazy_concoction",
+	"name": "Hazy Concoction",
+	"baseManaCost": 2,
+	"type": "SPELL",
+	"heroClass": "ROGUE",
+	"rarity": "FREE",
+	"description": "Freeze an enemy minion.",
+	"targetSelection": "ENEMY_MINIONS",
+	"spell": {
+		"class": "AddAttributeSpell",
+		"target": "TARGET",
+		"attribute": "FROZEN"
+	},
+	"collectible": false,
+	"set": "CUSTOM",
+	"fileFormatVersion": 1
+}

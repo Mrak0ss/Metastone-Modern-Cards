@@ -1,0 +1,37 @@
+{
+	"id": "minion_blob_of_tar",
+	"name": "Blob of Tar",
+	"baseManaCost": 5,
+	"type": "MINION",
+	"baseAttack": 4,
+	"baseHp": 4,
+	"heroClass": "ANY",
+	"rarity": "COMMON",
+	"race": "ELEMENTAL",
+	"description": "Poisonous. Taunt. Deathrattle: Summon a 2/2 Blob with Poisonous and a 2/2 Blob with Taunt.",
+	"deathrattle": {
+		"class": "SummonSpell",
+		"cards": [
+			"minion_lanky_blob",
+			"minion_robust_blob"
+		]
+	},
+	"trigger": {
+		"eventTrigger": {
+			"class": "DamageCausedTrigger",
+			"targetEntityType": "MINION",
+			"hostTargetType": "IGNORE_OTHER_SOURCES"
+		},
+		"spell": {
+			"class": "DestroySpell",
+			"target": "EVENT_TARGET"
+		}
+	},
+	"attributes": {
+		"TAUNT": true,
+		"DEATHRATTLES": true
+	},
+	"collectible": true,
+	"set": "CUSTOM",
+	"fileFormatVersion": 1
+}

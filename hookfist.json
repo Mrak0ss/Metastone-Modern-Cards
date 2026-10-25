@@ -1,0 +1,35 @@
+{
+  "name": "Hookfist-3000",
+  "baseManaCost": 3,
+  "type": "MINION",
+  "baseAttack": 4,
+  "baseHp": 3,
+  "heroClass": "WARRIOR",
+  "rarity": "COMMON",
+  "race": "PIRATE",
+  "description": "After your hero attacks, gain 4 Armor and draw a card.",
+  "trigger": {
+    "eventTrigger": {
+      "class": "AfterPhysicalAttackTrigger",
+      "sourcePlayer": "SELF",
+      "targetPlayer": "BOTH",
+      "sourceEntityType": "HERO"
+    },
+    "spell": {
+      "class": "MetaSpell",
+      "spells": [
+        {
+          "class": "BuffHeroSpell",
+          "armorBonus": 4
+        },
+        {
+          "class": "DrawCardSpell",
+          "value": 1
+        }
+      ]
+    }
+  },
+  "collectible": true,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

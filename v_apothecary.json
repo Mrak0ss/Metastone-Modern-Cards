@@ -1,0 +1,32 @@
+{
+	"name": "Vile Apothecary",
+	"baseManaCost": 3,
+	"type": "MINION",
+	"baseAttack": 2,
+	"baseHp": 4,
+	"heroClass": "ROGUE",
+	"rarity": "EPIC",
+	"race": "UNDEAD",
+	"description": "At the end of your turn, add a random Concoction to your hand.",
+	"trigger": {
+		"eventTrigger": {
+			"class": "TurnEndTrigger",
+			"targetPlayer": "SELF"
+		},
+		"spell": {
+			"class": "ReceiveRandomCardSpell",
+			"targetPlayer": "SELF",
+			"cards": [
+				"spell_slimy_concoction",
+				"spell_dreadful_concoction",
+				"spell_bubbling_concoction",
+				"spell_hazy_concoction",
+				"spell_gleaming_concoction"
+			]
+		}
+	},
+	"attributes": {},
+	"collectible": true,
+	"set": "CUSTOM",
+	"fileFormatVersion": 1
+}

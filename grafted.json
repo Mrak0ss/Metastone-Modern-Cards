@@ -1,0 +1,29 @@
+{
+	"name": "Grafted Knight",
+	"baseManaCost": 2,
+	"type": "MINION",
+	"baseAttack": 3,
+	"baseHp": 3,
+	"heroClass": "ANY",
+	"rarity": "COMMON",
+	"description": "Lifesteal.",
+	"trigger": {
+		"eventTrigger": {
+			"class": "DamageCausedTrigger",
+			"hostTargetType": "IGNORE_OTHER_SOURCES"
+		},
+		"spell": {
+			"class": "HealSpell",
+			"target": "FRIENDLY_HERO",
+			"value": {
+				"class": "AttributeValueProvider",
+				"target": "EVENT_TARGET",
+				"attribute": "LAST_HIT"
+			}
+		}
+	},
+	"attributes": {},
+	"collectible": true,
+	"set": "CUSTOM",
+	"fileFormatVersion": 1
+}

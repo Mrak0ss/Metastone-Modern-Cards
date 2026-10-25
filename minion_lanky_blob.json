@@ -1,0 +1,26 @@
+{
+	"id": "minion_lanky_blob",
+	"name": "Lanky Blob",
+	"baseManaCost": 2,
+	"type": "MINION",
+	"baseAttack": 2,
+	"baseHp": 2,
+	"heroClass": "ANY",
+	"rarity": "COMMON",
+	"race": "ELEMENTAL",
+	"description": "Poisonous.",
+	"trigger": {
+		"eventTrigger": {
+			"class": "DamageCausedTrigger",
+			"targetEntityType": "MINION",
+			"hostTargetType": "IGNORE_OTHER_SOURCES"
+		},
+		"spell": {
+			"class": "DestroySpell",
+			"target": "EVENT_TARGET"
+		}
+	},
+	"collectible": false,
+	"set": "CUSTOM",
+	"fileFormatVersion": 1
+}

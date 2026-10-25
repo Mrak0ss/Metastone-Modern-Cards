@@ -1,0 +1,23 @@
+{
+  "id": "minion_wasteland_assassin",
+  "name": "Wasteland Assassin",
+  "baseManaCost": 5,
+  "type": "MINION",
+  "baseAttack": 4,
+  "baseHp": 2,
+  "heroClass": "ANY",
+  "rarity": "COMMON",
+  "race": "UNDEAD",
+  "description": "Stealth. Reborn.",
+  "deathrattle": {
+    "class": "SummonSpell",
+    "card": "token_wasteland_assassin"
+  },
+  "attributes": {
+    "STEALTH": true,
+    "DEATHRATTLES": true
+  },
+  "collectible": true,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

@@ -1,0 +1,24 @@
+{
+	"name": "Tortollan Shellraiser",
+	"baseManaCost": 3,
+	"type": "MINION",
+	"baseAttack": 2,
+	"baseHp": 5,
+	"heroClass": "PRIEST",
+	"rarity": "COMMON",
+	"description": "Taunt. Deathrattle: Give a random friendly minion +1/+1.",
+	"deathrattle": {
+		"class": "BuffSpell",
+		"target": "FRIENDLY_MINIONS",
+		"attackBonus": 1,
+		"hpBonus": 1,
+		"randomTarget": true
+	},
+	"attributes": {
+		"TAUNT": true,
+		"DEATHRATTLES": true
+	},
+	"collectible": true,
+	"set": "CUSTOM",
+	"fileFormatVersion": 1
+}

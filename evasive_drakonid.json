@@ -1,0 +1,19 @@
+{
+	"name": "Evasive Drakonid",
+	"baseManaCost": 7,
+	"type": "MINION",
+	"baseAttack": 7,
+	"baseHp": 7,
+	"heroClass": "ANY",
+	"rarity": "COMMON",
+	"description": "Taunt. Your opponent can't target this with spells or Hero Powers.",
+	"race": "DRAGON",
+	"attributes": {
+		"TAUNT": true,
+		"UNTARGETABLE_BY_SPELLS": true,
+		"UNTARGETABLE_BY_HERO_POWERS": true
+	},
+	"collectible": true,
+	"set": "CUSTOM",
+	"fileFormatVersion": 1
+}

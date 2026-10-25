@@ -1,0 +1,20 @@
+{
+  "name": "Locust",
+  "baseManaCost": 1,
+  "type": "MINION",
+  "baseAttack": 1,
+  "baseHp": 1,
+  "heroClass": "ANY",
+  "rarity": "FREE",
+  "race": "BEAST",
+  "description": "Rush.",
+  "attributes": {
+    "CANNOT_ATTACK_HEROES": true,
+    "CHARGE": true,
+    "CANNOT_ATTACK_HERO_ON_SUMMON": true
+  },
+  "collectible": false,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1,
+  "id": "token_locust"
+}

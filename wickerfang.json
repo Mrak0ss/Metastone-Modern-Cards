@@ -1,0 +1,29 @@
+{
+  "id": "minion_wickerfang",
+  "name": "Wickerfang",
+  "baseManaCost": 6,
+  "type": "MINION",
+  "baseAttack": 1,
+  "baseHp": 5,
+  "heroClass": "DRUID",
+  "rarity": "LEGENDARY",
+  "description": "Colossal +4",
+  "battlecry": {
+    "targetSelection": "NONE",
+    "spell": {
+      "class": "SummonSpell",
+      "cards": [
+        "minion_wickerfang_leg",
+        "minion_wickerfang_leg",
+        "minion_wickerfang_leg",
+        "minion_wickerfang_leg"
+      ]
+    }
+  },
+  "attributes": {
+    "BATTLECRY": true
+  },
+  "collectible": true,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

@@ -1,0 +1,16 @@
+{
+	"name": "Psychic Scream",
+	"baseManaCost": 8,
+	"type": "SPELL",
+	"heroClass": "PRIEST",
+	"rarity": "EPIC",
+	"description": "Shuffle all minions into your deck.",
+	"targetSelection": "NONE",
+	"spell": {
+		"class": "ShuffleMinionToDeckSpell",
+		"target": "ALL_MINIONS"
+	},
+	"collectible": true,
+	"set": "CUSTOM",
+	"fileFormatVersion": 1
+}

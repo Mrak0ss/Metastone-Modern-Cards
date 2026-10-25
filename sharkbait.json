@@ -1,0 +1,19 @@
+{
+	"name": "Sharkbait",
+	"baseManaCost": 4,
+	"type": "MINION",
+	"baseAttack": 4,
+	"baseHp": 2,
+	"heroClass": "ANY",
+	"rarity": "FREE",
+	"race": "BEAST",
+	"description": "Rush.",
+	"attributes": {
+		"CANNOT_ATTACK_HEROES": true,
+		"CHARGE": true,
+		"CANNOT_ATTACK_HERO_ON_SUMMON": true
+	},
+	"collectible": true,
+	"set": "CUSTOM",
+	"fileFormatVersion": 1
+}

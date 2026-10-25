@@ -1,0 +1,21 @@
+{
+	"name": "Rally the Dead",
+	"baseManaCost": 3,
+	"type": "SPELL",
+	"heroClass": "PRIEST",
+	"rarity": "RARE",
+	"description": "Summon a friendly Deathrattle minion that died this game.",
+	"targetSelection": "NONE",
+	"spell": {
+		"class": "ResurrectSpell",
+		"value": 1,
+		"cardFilter": {
+			"class": "CardFilter",
+			"attribute": "DEATHRATTLES",
+			"operation": "HAS"
+		}
+	},
+	"collectible": true,
+	"set": "CUSTOM",
+	"fileFormatVersion": 1
+}

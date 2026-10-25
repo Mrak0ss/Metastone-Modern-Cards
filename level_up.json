@@ -1,0 +1,29 @@
+{
+  "id": "spell_level_up",
+  "name": "Level Up!",
+  "baseManaCost": 5,
+  "type": "SPELL",
+  "heroClass": "PALADIN",
+  "rarity": "RARE",
+  "description": "Give your Silver Hand Recruits +2/+2 and Taunt.",
+  "targetSelection": "NONE",
+  "spell": {
+    "class": "MetaSpell",
+    "spells": [
+      {
+        "class": "BuffSpell",
+        "target": "FRIENDLY_MINIONS",
+        "attackBonus": 2,
+        "hpBonus": 2
+      },
+      {
+        "class": "AddAttributeSpell",
+        "target": "FRIENDLY_MINIONS",
+        "attribute": "TAUNT"
+      }
+    ]
+  },
+  "collectible": true,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

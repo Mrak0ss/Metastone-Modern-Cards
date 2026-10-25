@@ -1,0 +1,22 @@
+{
+  "id": "minion_mecharoo",
+  "name": "Mecharoo",
+  "baseManaCost": 1,
+  "type": "MINION",
+  "baseAttack": 1,
+  "baseHp": 1,
+  "heroClass": "ANY",
+  "rarity": "COMMON",
+  "race": "MECH",
+  "description": "Deathrattle: Summon a 1/1 Mech.",
+  "deathrattle": {
+    "class": "SummonSpell",
+    "card": "token_mecharoo"
+  },
+  "attributes": {
+    "DEATHRATTLES": true
+  },
+  "collectible": true,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

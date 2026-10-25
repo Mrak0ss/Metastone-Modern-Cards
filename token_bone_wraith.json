@@ -1,0 +1,18 @@
+{
+  "id": "token_bone_wraith",
+  "name": "Bone Wraith",
+  "baseManaCost": 4,
+  "type": "MINION",
+  "baseAttack": 2,
+  "baseHp": 1,
+  "heroClass": "ANY",
+  "rarity": "FREE",
+  "race": "UNDEAD",
+  "description": "",
+  "attributes": {
+    "TAUNT": true
+  },
+  "collectible": false,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

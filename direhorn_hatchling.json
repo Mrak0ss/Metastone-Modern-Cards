@@ -1,0 +1,23 @@
+{
+  "id": "minion_direhorn_hatchling",
+  "name": "Direhorn Hatchling",
+  "baseManaCost": 5,
+  "type": "MINION",
+  "baseAttack": 4,
+  "baseHp": 6,
+  "heroClass": "WARRIOR",
+  "rarity": "RARE",
+  "description": "Taunt. Deathrattle: Shuffle an 8/12 Direhorn with Taunt into your deck.",
+  "race": "BEAST",
+  "deathrattle": {
+    "class": "ShuffleToDeckSpell",
+    "card": "token_direhorn_matriarch"
+  },
+  "attributes": {
+    "TAUNT": true,
+    "DEATHRATTLES": true
+  },
+  "collectible": true,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

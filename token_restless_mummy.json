@@ -1,0 +1,19 @@
+{
+  "id": "token_restless_mummy",
+  "name": "Restless Mummy",
+  "baseManaCost": 4,
+  "type": "MINION",
+  "baseAttack": 3,
+  "baseHp": 1,
+  "heroClass": "WARRIOR",
+  "rarity": "FREE",
+  "race": "UNDEAD",
+  "description": "",
+  "attributes": {
+    "CHARGE": true,
+    "CANNOT_ATTACK_HERO_ON_SUMMON": true
+  },
+  "collectible": false,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

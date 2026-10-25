@@ -1,0 +1,28 @@
+{
+	"name": "Heedless Hoarder",
+	"baseManaCost": 5,
+	"type": "MINION",
+	"baseAttack": 4,
+	"baseHp": 5,
+	"heroClass": "ANY",
+	"rarity": "EPIC",
+	"race": "MURLOC",
+	"description": "Deathrattle: Give a random friendly Murloc +4/+5.",
+	"deathrattle": {
+		"class": "BuffSpell",
+		"target": "FRIENDLY_MINIONS",
+		"attackBonus": 4,
+		"hpBonus": 5,
+		"randomTarget": true,
+		"filter": {
+			"class": "RaceFilter",
+			"race": "MURLOC"
+		}
+	},
+	"attributes": {
+		"DEATHRATTLES": true
+	},
+	"collectible": true,
+	"set": "CUSTOM",
+	"fileFormatVersion": 1
+}

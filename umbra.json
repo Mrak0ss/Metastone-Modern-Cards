@@ -1,0 +1,23 @@
+{
+	"name": "Spiritsinger Umbra",
+	"baseManaCost": 5,
+	"type": "MINION",
+	"baseAttack": 3,
+	"baseHp": 4,
+	"heroClass": "ANY",
+	"rarity": "LEGENDARY",
+	"description": "After you summon a minion, trigger its Deathrattle.",
+	"trigger": {
+		"eventTrigger": {
+			"class": "MinionSummonedTrigger",
+			"targetPlayer": "SELF"
+		},
+		"spell": {
+			"class": "TriggerDeathrattleSpell",
+			"target": "EVENT_TARGET"
+		}
+	},
+	"collectible": true,
+	"set": "CUSTOM",
+	"fileFormatVersion": 1
+}

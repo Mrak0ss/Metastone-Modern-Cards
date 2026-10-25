@@ -1,0 +1,30 @@
+{
+	"name": "Dragon Speaker",
+	"baseManaCost": 5,
+	"type": "MINION",
+	"baseAttack": 3,
+	"baseHp": 5,
+	"heroClass": "PALADIN",
+	"rarity": "EPIC",
+	"description": "Battlecry: Give all Dragons in your hand +3/+3.",
+	"battlecry": {
+		"targetSelection": "NONE",
+		"spell": {
+			"class": "BuffSpell",
+			"target": "FRIENDLY_HAND",
+			"attackBonus": 3,
+			"hpBonus": 3,
+			"filter": {
+				"class": "CardFilter",
+				"cardType": "MINION",
+				"race": "DRAGON"
+			}
+		}
+	},
+	"attributes": {
+		"BATTLECRY": true
+	},
+	"collectible": true,
+	"set": "CUSTOM",
+	"fileFormatVersion": 1
+}

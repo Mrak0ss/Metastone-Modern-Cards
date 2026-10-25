@@ -1,0 +1,30 @@
+{
+  "name": "Moo...",
+  "baseManaCost": 6,
+  "type": "SPELL",
+  "heroClass": "ANY",
+  "rarity": "FREE",
+  "description": "Summon 3 Hell Bovines. Give all Hell Bovines Taunt.",
+  "targetSelection": "NONE",
+  "spell": {
+    "class": "MetaSpell",
+    "spells": [
+      {
+        "class": "SummonSpell",
+        "cards": [
+          "token_hell_bovine",
+          "token_hell_bovine",
+          "token_hell_bovine"
+        ]
+      },
+      {
+        "class": "AddAttributeSpell",
+        "target": "FRIENDLY_MINIONS",
+        "attribute": "TAUNT"
+      }
+    ]
+  },
+  "collectible": true,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

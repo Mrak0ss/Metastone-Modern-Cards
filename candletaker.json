@@ -1,0 +1,22 @@
+{
+  "id": "minion_candletaker",
+  "name": "Candletaker",
+  "baseManaCost": 3,
+  "type": "MINION",
+  "baseAttack": 3,
+  "baseHp": 2,
+  "heroClass": "ANY",
+  "rarity": "COMMON",
+  "race": "UNDEAD",
+  "description": "Reborn",
+  "deathrattle": {
+    "class": "SummonSpell",
+    "card": "token_candletaker"
+  },
+  "attributes": {
+    "DEATHRATTLES": true
+  },
+  "collectible": true,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

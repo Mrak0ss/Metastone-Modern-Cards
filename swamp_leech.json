@@ -1,0 +1,30 @@
+{
+	"name": "Swamp Leech",
+	"baseManaCost": 1,
+	"type": "MINION",
+	"baseAttack": 2,
+	"baseHp": 1,
+	"heroClass": "ANY",
+	"rarity": "COMMON",
+	"race": "BEAST",
+	"description": "Lifesteal.",
+	"trigger": {
+		"eventTrigger": {
+			"class": "DamageCausedTrigger",
+			"hostTargetType": "IGNORE_OTHER_SOURCES"
+		},
+		"spell": {
+			"class": "HealSpell",
+			"target": "FRIENDLY_HERO",
+			"value": {
+				"class": "AttributeValueProvider",
+				"target": "EVENT_TARGET",
+				"attribute": "LAST_HIT"
+			}
+		}
+	},
+	"attributes": {},
+	"collectible": true,
+	"set": "CUSTOM",
+	"fileFormatVersion": 1
+}

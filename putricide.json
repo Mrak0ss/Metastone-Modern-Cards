@@ -1,0 +1,32 @@
+{
+	"name": "Potionmaster Putricide",
+	"baseManaCost": 2,
+	"type": "MINION",
+	"baseAttack": 1,
+	"baseHp": 4,
+	"heroClass": "ROGUE",
+	"rarity": "LEGENDARY",
+	"race": "UNDEAD",
+	"description": "After a minion dies, add a Concoction to your hand.",
+	"trigger": {
+		"eventTrigger": {
+			"class": "MinionDeathTrigger",
+			"targetPlayer": "BOTH"
+		},
+		"spell": {
+			"class": "ReceiveRandomCardSpell",
+			"targetPlayer": "SELF",
+			"cards": [
+				"spell_slimy_concoction",
+				"spell_dreadful_concoction",
+				"spell_bubbling_concoction",
+				"spell_hazy_concoction",
+				"spell_gleaming_concoction"
+			]
+		}
+	},
+	"attributes": {},
+	"collectible": true,
+	"set": "CUSTOM",
+	"fileFormatVersion": 1
+}

@@ -1,0 +1,40 @@
+{
+  "id": "minion_fireworks_tech",
+  "name": "Fireworks Tech",
+  "baseManaCost": 2,
+  "type": "MINION",
+  "baseAttack": 1,
+  "baseHp": 1,
+  "heroClass": "HUNTER",
+  "rarity": "COMMON",
+  "race": "MECH",
+  "description": "Battlecry: Give a friendly Mech +1/+1 and trigger its Deathrattle.",
+  "battlecry": {
+    "targetSelection": "MINIONS",
+    "spell": {
+      "class": "MetaSpell",
+      "spells": [
+        {
+          "class": "BuffSpell",
+          "target": "TARGET",
+          "attackBonus": 1,
+          "hpBonus": 1
+        },
+        {
+          "class": "TriggerDeathrattleSpell",
+          "target": "TARGET"
+        }
+      ],
+      "filter": {
+        "class": "RaceFilter",
+        "race": "MECH"
+      }
+    }
+  },
+  "attributes": {
+    "BATTLECRY": true
+  },
+  "collectible": true,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

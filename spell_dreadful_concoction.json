@@ -1,0 +1,18 @@
+{
+	"id": "spell_dreadful_concoction",
+	"name": "Dreadful Concoction",
+	"baseManaCost": 2,
+	"type": "SPELL",
+	"heroClass": "ROGUE",
+	"rarity": "FREE",
+	"description": "Destroy a random enemy minion.",
+	"targetSelection": "NONE",
+	"spell": {
+		"class": "DestroySpell",
+		"target": "ENEMY_MINIONS",
+		"randomTarget": true
+	},
+	"collectible": false,
+	"set": "CUSTOM",
+	"fileFormatVersion": 1
+}

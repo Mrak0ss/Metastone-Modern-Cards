@@ -1,0 +1,18 @@
+{
+	"id": "minion_robust_blob",
+	"name": "Robust Blob",
+	"baseManaCost": 2,
+	"type": "MINION",
+	"baseAttack": 2,
+	"baseHp": 2,
+	"heroClass": "ANY",
+	"rarity": "COMMON",
+	"race": "ELEMENTAL",
+	"description": "Taunt.",
+	"attributes": {
+		"TAUNT": true
+	},
+	"collectible": false,
+	"set": "CUSTOM",
+	"fileFormatVersion": 1
+}

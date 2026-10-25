@@ -1,0 +1,61 @@
+{
+  "name": "Priestess of Fury",
+  "baseManaCost": 7,
+  "type": "MINION",
+  "baseAttack": 6,
+  "baseHp": 7,
+  "heroClass": "WARLOCK",
+  "rarity": "RARE",
+  "race": "DEMON",
+  "description": "At the end of your turn, deal 6 damage randomly split among all enemies.",
+  "trigger": {
+    "eventTrigger": {
+      "class": "TurnEndTrigger",
+      "targetPlayer": "SELF"
+    },
+    "spell": {
+      "class": "MetaSpell",
+      "spells": [
+        {
+          "class": "DamageSpell",
+          "target": "ENEMY_CHARACTERS",
+          "value": 1,
+          "randomTarget": true
+        },
+        {
+          "class": "DamageSpell",
+          "target": "ENEMY_CHARACTERS",
+          "value": 1,
+          "randomTarget": true
+        },
+        {
+          "class": "DamageSpell",
+          "target": "ENEMY_CHARACTERS",
+          "value": 1,
+          "randomTarget": true
+        },
+        {
+          "class": "DamageSpell",
+          "target": "ENEMY_CHARACTERS",
+          "value": 1,
+          "randomTarget": true
+        },
+        {
+          "class": "DamageSpell",
+          "target": "ENEMY_CHARACTERS",
+          "value": 1,
+          "randomTarget": true
+        },
+        {
+          "class": "DamageSpell",
+          "target": "ENEMY_CHARACTERS",
+          "value": 1,
+          "randomTarget": true
+        }
+      ]
+    }
+  },
+  "collectible": true,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

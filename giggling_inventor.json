@@ -1,0 +1,27 @@
+{
+  "id": "minion_giggling_inventor",
+  "name": "Giggling Inventor",
+  "baseManaCost": 5,
+  "type": "MINION",
+  "baseAttack": 2,
+  "baseHp": 1,
+  "heroClass": "ANY",
+  "rarity": "RARE",
+  "description": "Battlecry: Summon two 1/2 Mechs with Taunt and Divine Shield.",
+  "battlecry": {
+    "targetSelection": "NONE",
+    "spell": {
+      "class": "SummonSpell",
+      "cards": [
+        "minion_annoy-o-tron",
+        "minion_annoy-o-tron"
+      ]
+    }
+  },
+  "attributes": {
+    "BATTLECRY": true
+  },
+  "collectible": true,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

@@ -1,0 +1,43 @@
+{
+	"name": "Potion Belt",
+	"baseManaCost": 2,
+	"type": "SPELL",
+	"heroClass": "ROGUE",
+	"rarity": "RARE",
+	"description": "Discover 2 Concoctions.",
+	"targetSelection": "NONE",
+	"spell": {
+		"class": "MetaSpell",
+		"spells": [
+			{
+				"class": "DiscoverCardSpell",
+				"cards": [
+					"spell_slimy_concoction",
+					"spell_dreadful_concoction",
+					"spell_bubbling_concoction",
+					"spell_hazy_concoction",
+					"spell_gleaming_concoction"
+				],
+				"spell": {
+					"class": "ReceiveCardSpell"
+				}
+			},
+			{
+				"class": "DiscoverCardSpell",
+				"cards": [
+					"spell_slimy_concoction",
+					"spell_dreadful_concoction",
+					"spell_bubbling_concoction",
+					"spell_hazy_concoction",
+					"spell_gleaming_concoction"
+				],
+				"spell": {
+					"class": "ReceiveCardSpell"
+				}
+			}
+		]
+	},
+	"collectible": true,
+	"set": "CUSTOM",
+	"fileFormatVersion": 1
+}

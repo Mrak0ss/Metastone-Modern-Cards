@@ -1,0 +1,24 @@
+{
+  "id": "token_khartut_defender",
+  "name": "Khartut Defender",
+  "baseManaCost": 6,
+  "type": "MINION",
+  "baseAttack": 3,
+  "baseHp": 1,
+  "heroClass": "ANY",
+  "rarity": "FREE",
+  "race": "UNDEAD",
+  "description": "Taunt. Deathrattle: Restore 3 Health to your hero.",
+  "deathrattle": {
+    "class": "HealSpell",
+    "target": "FRIENDLY_HERO",
+    "value": 3
+  },
+  "attributes": {
+    "TAUNT": true,
+    "DEATHRATTLES": true
+  },
+  "collectible": false,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

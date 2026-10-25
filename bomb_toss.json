@@ -1,0 +1,28 @@
+{
+  "id": "spell_bomb_toss",
+  "name": "Bomb Toss",
+  "baseManaCost": 2,
+  "type": "SPELL",
+  "heroClass": "HUNTER",
+  "rarity": "COMMON",
+  "description": "Deal 2 damage. Summon a 0/2 Goblin Bomb.",
+  "targetSelection": "NONE",
+  "spell": {
+    "class": "MetaSpell",
+    "spells": [
+      {
+        "class": "DamageSpell",
+        "target": "ENEMY_CHARACTERS",
+        "value": 2,
+        "randomTarget": true
+      },
+      {
+        "class": "SummonSpell",
+        "card": "token_goblin_bomb"
+      }
+    ]
+  },
+  "collectible": true,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

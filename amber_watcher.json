@@ -1,0 +1,25 @@
+{
+	"name": "Amber Watcher",
+	"baseManaCost": 5,
+	"type": "MINION",
+	"baseAttack": 4,
+	"baseHp": 6,
+	"heroClass": "PALADIN",
+	"rarity": "RARE",
+	"race": "DRAGON",
+	"description": "Battlecry: Restore 8 Health.",
+	"battlecry": {
+		"targetSelection": "NONE",
+		"spell": {
+			"class": "HealSpell",
+			"target": "FRIENDLY_CHARACTERS",
+			"value": 8
+		}
+	},
+	"attributes": {
+		"BATTLECRY": true
+	},
+	"collectible": true,
+	"set": "CUSTOM",
+	"fileFormatVersion": 1
+}

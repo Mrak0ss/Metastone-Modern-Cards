@@ -1,0 +1,22 @@
+{
+  "id": "minion_murmy",
+  "name": "Murmy",
+  "baseManaCost": 1,
+  "type": "MINION",
+  "baseAttack": 1,
+  "baseHp": 1,
+  "heroClass": "ANY",
+  "rarity": "COMMON",
+  "race": "MURLOC",
+  "description": "Reborn",
+  "deathrattle": {
+    "class": "SummonSpell",
+    "card": "token_murmy"
+  },
+  "attributes": {
+    "DEATHRATTLES": true
+  },
+  "collectible": true,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

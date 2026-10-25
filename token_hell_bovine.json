@@ -1,0 +1,21 @@
+{
+  "name": "Hell Bovine",
+  "baseManaCost": 3,
+  "type": "MINION",
+  "baseAttack": 2,
+  "baseHp": 2,
+  "heroClass": "ANY",
+  "rarity": "FREE",
+  "race": "DEMON",
+  "description": "Deathrattle: Shuffle a copy of this into your deck.",
+  "deathrattle": {
+    "class": "ShuffleToDeckSpell",
+    "card": "token_hell_bovine"
+  },
+  "attributes": {
+    "DEATHRATTLES": true
+  },
+  "collectible": false,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

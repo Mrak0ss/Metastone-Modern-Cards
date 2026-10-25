@@ -1,0 +1,23 @@
+{
+  "id": "minion_bone_wraith",
+  "name": "Bone Wraith",
+  "baseManaCost": 4,
+  "type": "MINION",
+  "baseAttack": 2,
+  "baseHp": 5,
+  "heroClass": "ANY",
+  "rarity": "COMMON",
+  "race": "UNDEAD",
+  "description": "Taunt. Reborn.",
+  "deathrattle": {
+    "class": "SummonSpell",
+    "card": "token_bone_wraith"
+  },
+  "attributes": {
+    "TAUNT": true,
+    "DEATHRATTLES": true
+  },
+  "collectible": true,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

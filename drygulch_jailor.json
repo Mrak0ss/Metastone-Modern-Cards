@@ -1,0 +1,37 @@
+{
+  "id": "minion_drygulch_jailor",
+  "name": "Drygulch Jailor",
+  "baseManaCost": 2,
+  "type": "MINION",
+  "baseAttack": 1,
+  "baseHp": 1,
+  "heroClass": "PALADIN",
+  "rarity": "COMMON",
+  "description": "Deathrattle: Add 3 Silver Hand Recruits to your hand.",
+  "deathrattle": {
+    "class": "MetaSpell",
+    "spells": [
+      {
+        "class": "ReceiveCardSpell",
+        "card": "token_silver_hand_recruit",
+        "targetPlayer": "SELF"
+      },
+      {
+        "class": "ReceiveCardSpell",
+        "card": "token_silver_hand_recruit",
+        "targetPlayer": "SELF"
+      },
+      {
+        "class": "ReceiveCardSpell",
+        "card": "token_silver_hand_recruit",
+        "targetPlayer": "SELF"
+      }
+    ]
+  },
+  "attributes": {
+    "DEATHRATTLES": true
+  },
+  "collectible": true,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

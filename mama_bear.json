@@ -1,0 +1,31 @@
+{
+	"name": "Mama Bear",
+	"baseManaCost": 8,
+	"type": "MINION",
+	"baseAttack": 6,
+	"baseHp": 6,
+	"heroClass": "HUNTER",
+	"rarity": "EPIC",
+	"race": "BEAST",
+	"description": "Whenever you summon a Beast, give it +6/+6.",
+	"attributes": {},
+	"trigger": {
+		"eventTrigger": {
+			"class": "MinionSummonedTrigger",
+			"targetPlayer": "SELF"
+		},
+		"spell": {
+			"class": "BuffSpell",
+			"target": "EVENT_TARGET",
+			"attackBonus": 6,
+			"hpBonus": 6,
+			"filter": {
+				"class": "RaceFilter",
+				"race": "BEAST"
+			}
+		}
+	},
+	"collectible": true,
+	"set": "CUSTOM",
+	"fileFormatVersion": 1
+}

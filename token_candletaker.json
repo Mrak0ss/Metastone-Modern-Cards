@@ -1,0 +1,15 @@
+{
+  "id": "token_candletaker",
+  "name": "Candletaker",
+  "baseManaCost": 3,
+  "type": "MINION",
+  "baseAttack": 3,
+  "baseHp": 1,
+  "heroClass": "ANY",
+  "rarity": "FREE",
+  "race": "UNDEAD",
+  "description": "",
+  "collectible": false,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

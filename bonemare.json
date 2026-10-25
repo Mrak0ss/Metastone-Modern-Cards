@@ -1,0 +1,37 @@
+{
+	"id": "minion_bonemare",
+	"name": "Bonemare",
+	"baseManaCost": 7,
+	"type": "MINION",
+	"baseAttack": 5,
+	"baseHp": 5,
+	"heroClass": "ANY",
+	"rarity": "COMMON",
+	"race": "BEAST",
+	"description": "Battlecry: Give a friendly minion +4/+4 and Taunt.",
+	"battlecry": {
+		"targetSelection": "MINIONS",
+		"spell": {
+			"class": "MetaSpell",
+			"spells": [
+				{
+					"class": "BuffSpell",
+					"target": "TARGET",
+					"attackBonus": 4,
+					"hpBonus": 4
+				},
+				{
+					"class": "AddAttributeSpell",
+					"target": "TARGET",
+					"attribute": "TAUNT"
+				}
+			]
+		}
+	},
+	"attributes": {
+		"BATTLECRY": true
+	},
+	"collectible": true,
+	"set": "CUSTOM",
+	"fileFormatVersion": 1
+}

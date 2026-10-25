@@ -1,0 +1,46 @@
+{
+	"name": "Bronze Explorer",
+	"baseManaCost": 3,
+	"type": "MINION",
+	"baseAttack": 3,
+	"baseHp": 3,
+	"heroClass": "PALADIN",
+	"rarity": "RARE",
+	"description": "Lifesteal. Battlecry: Discover a Dragon.",
+	"race": "DRAGON",
+	"battlecry": {
+		"targetSelection": "NONE",
+		"spell": {
+			"class": "DiscoverRandomCardSpell",
+			"spell": {
+				"class": "ReceiveCardSpell",
+				"targetPlayer": "SELF"
+			},
+			"cardFilter": {
+				"class": "CardFilter",
+				"race": "DRAGON"
+			}
+		}
+	},
+	"attributes": {
+		"BATTLECRY": true
+	},
+	"trigger": {
+		"eventTrigger": {
+			"class": "DamageCausedTrigger",
+			"hostTargetType": "IGNORE_OTHER_SOURCES"
+		},
+		"spell": {
+			"class": "HealSpell",
+			"target": "FRIENDLY_HERO",
+			"value": {
+				"class": "AttributeValueProvider",
+				"target": "EVENT_TARGET",
+				"attribute": "LAST_HIT"
+			}
+		}
+	},
+	"collectible": true,
+	"set": "CUSTOM",
+	"fileFormatVersion": 1
+}

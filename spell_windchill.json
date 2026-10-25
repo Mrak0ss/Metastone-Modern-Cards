@@ -1,0 +1,28 @@
+{
+  "id": "spell_windchill",
+  "name": "Windchill",
+  "baseManaCost": 1,
+  "type": "SPELL",
+  "heroClass": "SHAMAN",
+  "rarity": "COMMON",
+  "description": "Freeze a minion. Draw a card.",
+  "targetSelection": "MINIONS",
+  "spell": {
+    "class": "MetaSpell",
+    "spells": [
+      {
+        "class": "AddAttributeSpell",
+        "target": "TARGET",
+        "attribute": "FROZEN"
+      },
+      {
+        "class": "DrawCardSpell",
+        "targetPlayer": "SELF",
+        "value": 1
+      }
+    ]
+  },
+  "collectible": true,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

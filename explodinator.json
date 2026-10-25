@@ -1,0 +1,28 @@
+{
+  "id": "minion_explodinator",
+  "name": "Explodinator",
+  "baseManaCost": 4,
+  "type": "MINION",
+  "baseAttack": 3,
+  "baseHp": 2,
+  "heroClass": "ANY",
+  "rarity": "RARE",
+  "race": "MECH",
+  "description": "Battlecry: Summon two 0/2 Goblin Bombs.",
+  "battlecry": {
+    "targetSelection": "NONE",
+    "spell": {
+      "class": "SummonSpell",
+      "cards": [
+        "token_goblin_bomb",
+        "token_goblin_bomb"
+      ]
+    }
+  },
+  "attributes": {
+    "BATTLECRY": true
+  },
+  "collectible": true,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

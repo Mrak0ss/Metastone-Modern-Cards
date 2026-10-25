@@ -1,0 +1,27 @@
+{
+  "id": "minion_microtech_controller",
+  "name": "Microtech Controller",
+  "baseManaCost": 3,
+  "type": "MINION",
+  "baseAttack": 2,
+  "baseHp": 1,
+  "heroClass": "ANY",
+  "rarity": "COMMON",
+  "description": "Battlecry: Summon two 1/1 Microbots.",
+  "battlecry": {
+    "targetSelection": "NONE",
+    "spell": {
+      "class": "SummonSpell",
+      "cards": [
+        "minion_microbot",
+        "minion_microbot"
+      ]
+    }
+  },
+  "attributes": {
+    "BATTLECRY": true
+  },
+  "collectible": true,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

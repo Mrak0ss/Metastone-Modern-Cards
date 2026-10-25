@@ -1,0 +1,21 @@
+{
+	"name": "Grave Reawakening",
+	"baseManaCost": 6,
+	"type": "SPELL",
+	"heroClass": "PRIEST",
+	"rarity": "EPIC",
+	"description": "Summon 2 friendly Deathrattle minions that died this game.",
+	"targetSelection": "NONE",
+	"spell": {
+		"class": "ResurrectSpell",
+		"value": 2,
+		"cardFilter": {
+			"class": "CardFilter",
+			"attribute": "DEATHRATTLES",
+			"operation": "HAS"
+		}
+	},
+	"collectible": true,
+	"set": "CUSTOM",
+	"fileFormatVersion": 1
+}

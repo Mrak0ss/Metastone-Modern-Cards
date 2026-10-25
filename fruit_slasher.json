@@ -1,0 +1,33 @@
+{
+  "id": "minion_fruit_slasher",
+  "name": "Fruit Slasher",
+  "baseManaCost": 4,
+  "type": "MINION",
+  "baseAttack": 4,
+  "baseHp": 2,
+  "heroClass": "ANY",
+  "rarity": "FREE",
+  "race": "PANDAREN",
+  "description": "Battlecry: Deal 4 damage to an enemy.",
+  "targetSelection": "ENEMY_CHARACTERS",
+  "battlecry": {
+    "targetSelection": "ENEMY_CHARACTERS",
+    "spell": {
+      "class": "DamageSpell",
+      "target": "TARGET",
+      "value": 4
+    }
+  },
+  "combo": {
+    "class": "DamageSpell",
+    "target": "ENEMY_MINIONS",
+    "value": 1
+  },
+  "attributes": {
+    "BATTLECRY": true,
+    "COMBO": true
+  },
+  "collectible": true,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

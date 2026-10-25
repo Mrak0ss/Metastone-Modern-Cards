@@ -1,0 +1,24 @@
+{
+  "id": "minion_restless_mummy",
+  "name": "Restless Mummy",
+  "baseManaCost": 4,
+  "type": "MINION",
+  "baseAttack": 3,
+  "baseHp": 2,
+  "heroClass": "WARRIOR",
+  "rarity": "RARE",
+  "race": "UNDEAD",
+  "description": "Rush. Reborn.",
+  "deathrattle": {
+    "class": "SummonSpell",
+    "card": "token_restless_mummy"
+  },
+  "attributes": {
+    "CHARGE": true,
+    "CANNOT_ATTACK_HERO_ON_SUMMON": true,
+    "DEATHRATTLES": true
+  },
+  "collectible": true,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

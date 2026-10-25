@@ -1,0 +1,15 @@
+{
+  "id": "minion_desert_hare_token",
+  "name": "Desert Hare",
+  "baseManaCost": 3,
+  "type": "MINION",
+  "baseAttack": 1,
+  "baseHp": 1,
+  "heroClass": "ANY",
+  "rarity": "COMMON",
+  "race": "BEAST",
+  "description": "",
+  "collectible": false,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

@@ -1,0 +1,22 @@
+{
+	"name": "Rally!",
+	"baseManaCost": 4,
+	"type": "SPELL",
+	"heroClass": "PRIEST",
+	"rarity": "RARE",
+	"description": "Summon a friendly minion that died this game with 3 or less Attack.",
+	"targetSelection": "NONE",
+	"spell": {
+		"class": "ResurrectSpell",
+		"cardFilter": {
+			"class": "CardFilter",
+			"cardType": "MINION",
+			"attribute": "ATTACK",
+			"operation": "LESS_OR_EQUAL",
+			"value": 3
+		}
+	},
+	"collectible": true,
+	"set": "CUSTOM",
+	"fileFormatVersion": 1
+}

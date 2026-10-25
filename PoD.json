@@ -1,0 +1,25 @@
+{
+  "name": "Plague of Death",
+  "baseManaCost": 9,
+  "type": "SPELL",
+  "heroClass": "PRIEST",
+  "rarity": "EPIC",
+  "description": "Silence and destroy all minions.",
+  "targetSelection": "NONE",
+  "spell": {
+    "class": "MetaSpell",
+    "spells": [
+      {
+        "class": "SilenceSpell",
+        "target": "ALL_MINIONS"
+      },
+      {
+        "class": "DestroySpell",
+        "target": "ALL_MINIONS"
+      }
+    ]
+  },
+  "collectible": true,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

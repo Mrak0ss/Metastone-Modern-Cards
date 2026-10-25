@@ -1,0 +1,22 @@
+{
+	"id": "spell_slimy_concoction",
+	"name": "Slimy Concoction",
+	"baseManaCost": 2,
+	"type": "SPELL",
+	"heroClass": "ROGUE",
+	"rarity": "FREE",
+	"description": "Summon a random 3-Cost minion.",
+	"targetSelection": "NONE",
+	"spell": {
+		"class": "SummonRandomMinionFilteredSpell",
+		"targetPlayer": "SELF",
+		"cardFilter": {
+			"class": "CardFilter",
+			"cardType": "MINION",
+			"manaCost": 3
+		}
+	},
+	"collectible": false,
+	"set": "CUSTOM",
+	"fileFormatVersion": 1
+}

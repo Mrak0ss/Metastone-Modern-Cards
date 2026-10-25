@@ -1,0 +1,35 @@
+{
+	"id": "minion_stonehill_defender",
+	"name": "Stonehill Defender",
+	"baseManaCost": 3,
+	"type": "MINION",
+	"baseAttack": 1,
+	"baseHp": 5,
+	"heroClass": "ANY",
+	"rarity": "RARE",
+	"race": "TORTOLLan",
+	"description": "Taunt. Battlecry: Discover a Taunt minion.",
+	"battlecry": {
+		"targetSelection": "NONE",
+		"spell": {
+			"class": "DiscoverRandomCardSpell",
+			"spell": {
+				"class": "ReceiveCardSpell",
+				"targetPlayer": "SELF"
+			},
+			"cardFilter": {
+				"class": "CardFilter",
+				"cardType": "MINION",
+				"attribute": "TAUNT",
+				"operation": "HAS"
+			}
+		}
+	},
+	"attributes": {
+		"TAUNT": true,
+		"BATTLECRY": true
+	},
+	"collectible": true,
+	"set": "CUSTOM",
+	"fileFormatVersion": 1
+}

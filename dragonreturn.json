@@ -1,0 +1,20 @@
+{
+	"name": "Dragon's Return",
+	"baseManaCost": 5,
+	"type": "SPELL",
+	"heroClass": "PRIEST",
+	"rarity": "RARE",
+	"description": "Summon a friendly Dragon that died this game.",
+	"targetSelection": "NONE",
+	"spell": {
+		"class": "ResurrectSpell",
+		"value": 1,
+		"cardFilter": {
+			"class": "CardFilter",
+			"race": "DRAGON"
+		}
+	},
+	"collectible": true,
+	"set": "CUSTOM",
+	"fileFormatVersion": 1
+}

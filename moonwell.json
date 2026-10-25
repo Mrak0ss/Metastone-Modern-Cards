@@ -1,0 +1,27 @@
+{
+  "name": "Moonwell",
+  "baseManaCost": 6,
+  "type": "SPELL",
+  "heroClass": "PRIEST",
+  "rarity": "EPIC",
+  "description": "Deal 4 damage to all enemy characters. Restore 4 Health to all friendly characters.",
+  "targetSelection": "NONE",
+  "spell": {
+    "class": "MetaSpell",
+    "spells": [
+      {
+        "class": "DamageSpell",
+        "target": "ENEMY_CHARACTERS",
+        "value": 4
+      },
+      {
+        "class": "HealSpell",
+        "target": "FRIENDLY_CHARACTERS",
+        "value": 4
+      }
+    ]
+  },
+  "collectible": true,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

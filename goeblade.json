@@ -1,0 +1,27 @@
+{
+  "id": "minion_admiral_eliza_goreblade",
+  "name": "Admiral Eliza Goreblade",
+  "baseManaCost": 6,
+  "type": "MINION",
+  "baseAttack": 6,
+  "baseHp": 7,
+  "heroClass": "ANY",
+  "race": "PIRATE",
+  "rarity": "COMMON",
+  "description": "Give all friendly minions +3/+1.",
+  "trigger": {
+    "eventTrigger": {
+      "class": "AfterPhysicalAttackTrigger",
+      "hostTargetType": "IGNORE_OTHER_SOURCES"
+    },
+    "spell": {
+      "class": "BuffSpell",
+      "target": "FRIENDLY_MINIONS",
+      "attackBonus": 3,
+      "hpBonus": 1
+    }
+  },
+  "collectible": true,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}
