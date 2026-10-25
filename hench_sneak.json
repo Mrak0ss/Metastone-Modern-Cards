@@ -1,0 +1,18 @@
+{
+  "id": "minion_hench_clan_sneak",
+  "name": "Hench-Clan Sneak",
+  "baseManaCost": 3,
+  "type": "MINION",
+  "baseAttack": 3,
+  "baseHp": 3,
+  "heroClass": "ANY",
+  "rarity": "COMMON",
+  "description": "Stealth.",
+  "race": "QUILBOAR",
+  "attributes": {
+    "STEALTH": true
+  },
+  "collectible": true,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

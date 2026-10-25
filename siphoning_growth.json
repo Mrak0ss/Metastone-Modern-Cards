@@ -1,0 +1,27 @@
+{
+	"id": "spell_siphoning_growth",
+	"name": "Siphoning Growth",
+	"baseManaCost": 1,
+	"type": "SPELL",
+	"heroClass": "WARRIOR",
+	"rarity": "RARE",
+	"description": "Destroy a friendly minion to gain 8 Armor.",
+	"targetSelection": "FRIENDLY_MINIONS",
+	"spell": {
+		"class": "MetaSpell",
+		"spells": [
+			{
+				"class": "DestroySpell",
+				"target": "TARGET"
+			},
+			{
+				"class": "BuffHeroSpell",
+				"target": "FRIENDLY_HERO",
+				"armorBonus": 8
+			}
+		]
+	},
+	"collectible": true,
+	"set": "CUSTOM",
+	"fileFormatVersion": 1
+}

@@ -1,0 +1,28 @@
+{
+	"id": "minion_marquee_ticker",
+	"name": "Marquee Ticker",
+	"baseManaCost": 5,
+	"type": "MINION",
+	"baseAttack": 3,
+	"baseHp": 7,
+	"heroClass": "ANY",
+	"rarity": "RARE",
+	"description": "At the end of your turn, get a random spell.",
+	"race": "MECH",
+	"trigger": {
+		"eventTrigger": {
+			"class": "TurnEndTrigger",
+			"targetPlayer": "SELF"
+		},
+		"spell": {
+			"class": "ReceiveCardSpell",
+			"cardFilter": {
+				"class": "CardFilter",
+				"cardType": "SPELL"
+			}
+		}
+	},
+	"collectible": true,
+	"set": "CUSTOM",
+	"fileFormatVersion": 1
+}

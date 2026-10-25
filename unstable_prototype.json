@@ -1,0 +1,29 @@
+{
+  "id": "minion_unstable_prototype",
+  "name": "Unstable Prototype",
+  "baseManaCost": 1,
+  "type": "MINION",
+  "baseAttack": 0,
+  "baseHp": 1,
+  "heroClass": "ANY",
+  "rarity": "COMMON",
+  "description": "Deathrattle: Give all minions in your hand +2/+2.",
+  "race": "MECH",
+  "deathrattle": {
+    "class": "BuffSpell",
+    "target": "FRIENDLY_HAND",
+    "attackBonus": 2,
+    "hpBonus": 2,
+    "filter": {
+      "class": "CardFilter",
+      "cardType": "MINION"
+    }
+  },
+  "attributes": {
+    "DEATHRATTLES": true,
+    "REBORN": true
+  },
+  "collectible": true,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

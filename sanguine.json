@@ -1,0 +1,28 @@
+{
+  "id": "spell_sanguine_depths",
+  "name": "Sanguine Depths",
+  "baseManaCost": 1,
+  "type": "SPELL",
+  "heroClass": "WARRIOR",
+  "rarity": "COMMON",
+  "description": "Deal 1 damage to a friendly minion. Give it +2 Attack.",
+  "targetSelection": "FRIENDLY_MINIONS",
+  "spell": {
+    "class": "MetaSpell",
+    "spells": [
+      {
+        "class": "DamageSpell",
+        "target": "TARGET",
+        "value": 1
+      },
+      {
+        "class": "BuffSpell",
+        "target": "TARGET",
+        "attackBonus": 2
+      }
+    ]
+  },
+  "collectible": true,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

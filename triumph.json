@@ -1,0 +1,18 @@
+{
+  "id": "spell_sylvanas_triumph_aoe",
+  "name": "Sylvanas's Triumph",
+  "baseManaCost": 4,
+  "type": "SPELL",
+  "heroClass": "HUNTER",
+  "rarity": "COMMON",
+  "description": "Deal 3 damage to ALL enemies.",
+  "targetSelection": "NONE",
+  "spell": {
+    "class": "DamageSpell",
+    "target": "ENEMY_CHARACTERS",
+    "value": 3
+  },
+  "collectible": false,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

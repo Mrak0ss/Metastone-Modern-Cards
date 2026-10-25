@@ -1,0 +1,22 @@
+{
+	"id": "minion_octosari",
+	"name": "Octosari",
+	"baseManaCost": 8,
+	"type": "MINION",
+	"baseAttack": 8,
+	"baseHp": 8,
+	"heroClass": "ANY",
+	"rarity": "LEGENDARY",
+	"race": "BEAST",
+	"description": "Deathrattle: Draw 8 cards.",
+	"deathrattle": {
+		"class": "DrawCardSpell",
+		"value": 8
+	},
+	"attributes": {
+		"DEATHRATTLES": true
+	},
+	"collectible": true,
+	"set": "CUSTOM",
+	"fileFormatVersion": 1
+}

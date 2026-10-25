@@ -1,0 +1,30 @@
+{
+	"id": "spell_shifting_tide",
+	"name": "Shifting Tide",
+	"baseManaCost": 1,
+	"type": "SPELL",
+	"heroClass": "ANY",
+	"rarity": "RARE",
+	"description": "Give a minion +1/+1 twice.",
+	"targetSelection": "MINIONS",
+	"spell": {
+		"class": "MetaSpell",
+		"spells": [
+			{
+				"class": "BuffSpell",
+				"target": "TARGET",
+				"attackBonus": 1,
+				"hpBonus": 1
+			},
+			{
+				"class": "BuffSpell",
+				"target": "TARGET",
+				"attackBonus": 1,
+				"hpBonus": 1
+			}
+		]
+	},
+	"collectible": true,
+	"set": "CUSTOM",
+	"fileFormatVersion": 1
+}

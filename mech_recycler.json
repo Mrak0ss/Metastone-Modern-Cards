@@ -1,0 +1,25 @@
+{
+  "id": "minion_mech_recycler",
+  "name": "Mech Recycler",
+  "baseManaCost": 2,
+  "type": "MINION",
+  "baseAttack": 2,
+  "baseHp": 2,
+  "heroClass": "HUNTER",
+  "rarity": "COMMON",
+  "description": "Battlecry: If you control a Mech, draw a card.",
+  "race": "MECH",
+  "battlecry": {
+    "targetSelection": "NONE",
+    "spell": {
+      "class": "DrawCardSpell",
+      "targetPlayer": "SELF"
+    }
+  },
+  "attributes": {
+    "BATTLECRY": true
+  },
+  "collectible": true,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

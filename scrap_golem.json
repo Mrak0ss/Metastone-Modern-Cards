@@ -1,0 +1,28 @@
+{
+  "id": "minion_scrap_golem",
+  "name": "Scrap Golem",
+  "baseManaCost": 5,
+  "type": "MINION",
+  "baseAttack": 4,
+  "baseHp": 5,
+  "heroClass": "WARRIOR",
+  "rarity": "RARE",
+  "description": "Taunt. Deathrattle: Gain Armor equal to this minion's Attack.",
+  "race": "MECH",
+  "deathrattle": {
+    "class": "BuffHeroSpell",
+    "target": "FRIENDLY_HERO",
+    "armorBonus": {
+      "class": "AttributeValueProvider",
+      "target": "SELF",
+      "attribute": "ATTACK"
+    }
+  },
+  "attributes": {
+    "TAUNT": true,
+    "DEATHRATTLES": true
+  },
+  "collectible": true,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

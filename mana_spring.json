@@ -1,0 +1,20 @@
+{
+  "id": "minion_mana_spring_totem",
+  "name": "Mana Spring Totem",
+  "baseManaCost": 2,
+  "type": "MINION",
+  "baseAttack": 0,
+  "baseHp": 1,
+  "heroClass": "SHAMAN",
+  "rarity": "COMMON",
+  "description": "Your cards cost (1) less.",
+  "race": "TOTEM",
+  "cardCostModifier": {
+    "class": "CardCostModifier",
+    "operation": "SUBTRACT",
+    "value": 1
+  },
+  "collectible": true,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

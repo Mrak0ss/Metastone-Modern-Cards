@@ -1,0 +1,17 @@
+{
+	"id": "minion_living_monument",
+	"name": "Living Monument",
+	"baseManaCost": 10,
+	"type": "MINION",
+	"baseAttack": 10,
+	"baseHp": 10,
+	"heroClass": "ANY",
+	"rarity": "COMMON",
+	"description": "Taunt.",
+	"attributes": {
+		"TAUNT": true
+	},
+	"collectible": true,
+	"set": "CUSTOM",
+	"fileFormatVersion": 1
+}

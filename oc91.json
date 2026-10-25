@@ -1,0 +1,25 @@
+{
+  "id": "minion_oc91_chariot",
+  "name": "OC91 Chariot",
+  "baseManaCost": 5,
+  "type": "MINION",
+  "baseAttack": 5,
+  "baseHp": 5,
+  "heroClass": "ANY",
+  "rarity": "COMMON",
+  "description": "After you play a minion, draw a card.",
+  "race": "MECH",
+  "trigger": {
+    "eventTrigger": {
+      "class": "AfterMinionPlayedTrigger",
+      "targetPlayer": "SELF"
+    },
+    "spell": {
+      "class": "DrawCardSpell",
+      "targetPlayer": "SELF"
+    }
+  },
+  "collectible": true,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

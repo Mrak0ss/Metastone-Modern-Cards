@@ -1,0 +1,26 @@
+{
+	"id": "minion_molten_rock",
+	"name": "Molten Rock",
+	"baseManaCost": 3,
+	"type": "MINION",
+	"baseAttack": 3,
+	"baseHp": 3,
+	"heroClass": "ANY",
+	"rarity": "RARE",
+	"race": "ELEMENTAL",
+	"description": "At the end of your turn, deal 1 damage to all characters.",
+	"trigger": {
+		"eventTrigger": {
+			"class": "TurnEndTrigger",
+			"targetPlayer": "SELF"
+		},
+		"spell": {
+			"class": "DamageSpell",
+			"target": "ALL_CHARACTERS",
+			"value": 1
+		}
+	},
+	"collectible": true,
+	"set": "CUSTOM",
+	"fileFormatVersion": 1
+}

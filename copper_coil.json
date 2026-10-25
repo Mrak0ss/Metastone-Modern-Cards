@@ -1,0 +1,22 @@
+{
+	"id": "spell_copper_coil",
+	"name": "Copper Coil",
+	"baseManaCost": 1,
+	"type": "SPELL",
+	"heroClass": "ANY",
+	"rarity": "RARE",
+	"description": "Give a friendly Mech +1/+1.",
+	"targetSelection": "FRIENDLY_MINIONS",
+	"spell": {
+		"class": "BuffSpell",
+		"attackBonus": 1,
+		"hpBonus": 1,
+		"filter": {
+			"class": "RaceFilter",
+			"race": "MECH"
+		}
+	},
+	"collectible": true,
+	"set": "CUSTOM",
+	"fileFormatVersion": 1
+}

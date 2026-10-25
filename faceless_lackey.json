@@ -1,0 +1,28 @@
+  {
+    "id": "minion_faceless_lackey",
+    "name": "Faceless Lackey",
+    "baseManaCost": 1,
+    "type": "MINION",
+    "baseAttack": 1,
+    "baseHp": 1,
+    "heroClass": "ANY",
+    "rarity": "COMMON",
+    "description": "Battlecry: Summon a random 2-Cost minion.",
+    "battlecry": {
+      "spell": {
+        "class": "SummonRandomMinionFilteredSpell",
+        "targetPlayer": "SELF",
+        "cardFilter": {
+          "class": "CardFilter",
+          "cardType": "MINION",
+          "manaCost": 2
+        }
+      }
+    },
+    "attributes": {
+      "BATTLECRY": true
+    },
+    "collectible": true,
+    "set": "CUSTOM",
+    "fileFormatVersion": 1
+  }

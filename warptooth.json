@@ -1,0 +1,26 @@
+{
+  "id": "minion_warptooth",
+  "name": "Warptooth",
+  "baseManaCost": 5,
+  "type": "MINION",
+  "baseAttack": 4,
+  "baseHp": 4,
+  "heroClass": "WARRIOR",
+  "rarity": "LEGENDARY",
+  "description": "Charge. Battlecry: Deal 4 damage to an enemy minion.",
+  "battlecry": {
+    "targetSelection": "ENEMY_MINIONS",
+    "spell": {
+      "class": "DamageSpell",
+      "target": "TARGET",
+      "value": 4
+    }
+  },
+  "attributes": {
+    "BATTLECRY": true,
+    "CHARGE": true
+  },
+  "collectible": true,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

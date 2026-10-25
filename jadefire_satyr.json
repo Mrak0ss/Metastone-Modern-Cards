@@ -1,0 +1,18 @@
+{
+  "id": "minion_jadefire_satyr",
+  "name": "Jadefire Satyr",
+  "baseManaCost": 5,
+  "type": "MINION",
+  "baseAttack": 5,
+  "baseHp": 5,
+  "heroClass": "ANY",
+  "rarity": "COMMON",
+  "description": "Stealth.",
+  "race": "DEMON",
+  "attributes": {
+    "STEALTH": true
+  },
+  "collectible": true,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

@@ -1,0 +1,30 @@
+{
+	"name": "Breath of Sindragosa",
+	"baseManaCost": 1,
+	"type": "SPELL",
+	"heroClass": "MAGE",
+	"rarity": "COMMON",
+	"description": "Deal 2 damage to a random enemy minion and Freeze it.",
+	"targetSelection": "NONE",
+	"spell": {
+		"class": "MultiTargetSpell",
+		"target": "ENEMY_MINIONS",
+		"value": 1,
+		"spell": {
+			"class": "MetaSpell",
+			"spells": [
+				{
+					"class": "DamageSpell",
+					"value": 2
+				},
+				{
+					"class": "AddAttributeSpell",
+					"attribute": "FROZEN"
+				}
+			]
+		}
+	},
+	"collectible": true,
+	"set": "CUSTOM",
+	"fileFormatVersion": 1
+}

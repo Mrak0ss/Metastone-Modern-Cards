@@ -1,0 +1,27 @@
+{
+	"id": "minion_silver_hand_crusader",
+	"name": "Silver Hand Crusader",
+	"baseManaCost": 7,
+	"type": "MINION",
+	"baseAttack": 7,
+	"baseHp": 7,
+	"heroClass": "PALADIN",
+	"rarity": "LEGENDARY",
+	"description": "Battlecry: Add a random Paladin card to your hand.",
+	"battlecry": {
+		"targetSelection": "NONE",
+		"spell": {
+			"class": "ReceiveCardSpell",
+			"cardFilter": {
+				"class": "CardFilter",
+				"heroClass": "PALADIN"
+			}
+		}
+	},
+	"attributes": {
+		"BATTLECRY": true
+	},
+	"collectible": true,
+	"set": "CUSTOM",
+	"fileFormatVersion": 1
+}

@@ -1,0 +1,22 @@
+{
+  "id": "spell_mental_collapse",
+  "name": "Mental Collapse",
+  "baseManaCost": 2,
+  "type": "SPELL",
+  "heroClass": "PRIEST",
+  "rarity": "COMMON",
+  "description": "Deal 1 damage to the enemy hero for each card in their hand.",
+  "targetSelection": "NONE",
+  "spell": {
+    "class": "DamageSpell",
+    "target": "ENEMY_HERO",
+    "value": {
+      "class": "PlayerAttributeValueProvider",
+      "targetPlayer": "OPPONENT",
+      "playerAttribute": "HAND_COUNT"
+    }
+  },
+  "collectible": true,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

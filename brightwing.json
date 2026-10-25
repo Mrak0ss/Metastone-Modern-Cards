@@ -1,0 +1,29 @@
+{
+  "id": "minion_brightwing",
+  "name": "Brightwing",
+  "baseManaCost": 2,
+  "type": "MINION",
+  "baseAttack": 3,
+  "baseHp": 2,
+  "heroClass": "ANY",
+  "rarity": "LEGENDARY",
+  "description": "Battlecry: Add a random Legendary minion to your hand.",
+  "race": "DRAGON",
+  "battlecry": {
+    "targetSelection": "NONE",
+    "spell": {
+      "class": "ReceiveCardSpell",
+      "cardFilter": {
+        "class": "CardFilter",
+        "cardType": "MINION",
+        "rarity": "LEGENDARY"
+      }
+    }
+  },
+  "attributes": {
+    "BATTLECRY": true
+  },
+  "collectible": true,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

@@ -1,0 +1,15 @@
+{
+  "id": "minion_ancient_totem",
+  "name": "Ancient Totem",
+  "baseManaCost": 0,
+  "type": "MINION",
+  "baseAttack": 0,
+  "baseHp": 3,
+  "heroClass": "ANY",
+  "rarity": "COMMON",
+  "description": "",
+  "race": "TOTEM",
+  "collectible": true,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

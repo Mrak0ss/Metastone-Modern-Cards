@@ -1,0 +1,15 @@
+{
+	"id": "minion_desk_imp",
+	"name": "Desk Imp",
+	"baseManaCost": 0,
+	"type": "MINION",
+	"baseAttack": 1,
+	"baseHp": 1,
+	"heroClass": "ANY",
+	"rarity": "COMMON",
+	"race": "DEMON",
+	"description": "",
+	"collectible": true,
+	"set": "CUSTOM",
+	"fileFormatVersion": 1
+}

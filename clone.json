@@ -1,0 +1,17 @@
+{
+  "id": "spell_timewarped_cloning_device",
+  "name": "Timewarped Cloning Device",
+  "baseManaCost": 2,
+  "type": "SPELL",
+  "heroClass": "ANY",
+  "rarity": "FREE",
+  "description": "Choose a friendly minion. Summon an exact copy of it.",
+  "targetSelection": "FRIENDLY_MINIONS",
+  "spell": {
+    "class": "SummonCopySpell",
+    "target": "TARGET"
+  },
+  "collectible": true,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

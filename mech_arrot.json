@@ -1,0 +1,15 @@
+{
+  "id": "minion_mechanical_parrot",
+  "name": "Mechanical Parrot",
+  "baseManaCost": 1,
+  "type": "MINION",
+  "baseAttack": 3,
+  "baseHp": 6,
+  "heroClass": "ANY",
+  "rarity": "FREE",
+  "description": "",
+  "race": "MECH",
+  "collectible": true,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

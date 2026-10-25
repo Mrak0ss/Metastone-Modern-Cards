@@ -1,0 +1,36 @@
+{
+  "id": "spell_scrap_factory",
+  "name": "Scrap Factory",
+  "baseManaCost": 3,
+  "type": "SPELL",
+  "heroClass": "HUNTER",
+  "rarity": "RARE",
+  "description": "Summon two random 2-Cost Mechs.",
+  "targetSelection": "NONE",
+  "spell": {
+    "class": "MetaSpell",
+    "spells": [
+      {
+        "class": "SummonRandomMinionFilteredSpell",
+        "cardFilter": {
+          "class": "CardFilter",
+          "cardType": "MINION",
+          "race": "MECH",
+          "manaCost": 2
+        }
+      },
+      {
+        "class": "SummonRandomMinionFilteredSpell",
+        "cardFilter": {
+          "class": "CardFilter",
+          "cardType": "MINION",
+          "race": "MECH",
+          "manaCost": 2
+        }
+      }
+    ]
+  },
+  "collectible": true,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

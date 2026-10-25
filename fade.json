@@ -1,0 +1,27 @@
+{
+  "id": "spell_fade",
+  "name": "Fade",
+  "baseManaCost": 2,
+  "type": "SPELL",
+  "heroClass": "PRIEST",
+  "rarity": "COMMON",
+  "description": "Give your minions Taunt. Draw a card.",
+  "targetSelection": "NONE",
+  "spell": {
+    "class": "MetaSpell",
+    "spells": [
+      {
+        "class": "AddAttributeSpell",
+        "target": "FRIENDLY_MINIONS",
+        "attribute": "TAUNT"
+      },
+      {
+        "class": "DrawCardSpell",
+        "targetPlayer": "SELF"
+      }
+    ]
+  },
+  "collectible": true,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

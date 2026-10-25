@@ -1,0 +1,31 @@
+{
+  "id": "spell_smoke_bomb_arena",
+  "name": "Smoke Bomb",
+  "baseManaCost": 1,
+  "type": "SPELL",
+  "heroClass": "ROGUE",
+  "rarity": "COMMON",
+  "description": "Give a minion Stealth until your next turn. Draw a card.",
+  "targetSelection": "MINIONS",
+  "spell": {
+    "class": "MetaSpell",
+    "spells": [
+      {
+        "class": "AddAttributeSpell",
+        "target": "TARGET",
+        "attribute": "STEALTH",
+        "revertTrigger": {
+          "class": "TurnStartTrigger",
+          "targetPlayer": "SELF"
+        }
+      },
+      {
+        "class": "DrawCardSpell",
+        "targetPlayer": "SELF"
+      }
+    ]
+  },
+  "collectible": true,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

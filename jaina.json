@@ -1,0 +1,32 @@
+{
+	"id": "minion_jaina_proudmoore",
+	"name": "Jaina Proudmoore",
+	"baseManaCost": 6,
+	"type": "MINION",
+	"baseAttack": 5,
+	"baseHp": 4,
+	"heroClass": "MAGE",
+	"rarity": "LEGENDARY",
+	"description": "At the end of your turn, Freeze a random enemy minion.",
+	"trigger": {
+		"eventTrigger": {
+			"class": "TurnEndTrigger",
+			"targetPlayer": "SELF"
+		},
+		"spell": {
+			"class": "AddAttributeSpell",
+			"target": "ENEMY_MINIONS",
+			"attribute": "FROZEN",
+			"randomTarget": true,
+			"filter": {
+				"class": "AttributeFilter",
+				"attribute": "FROZEN",
+				"operation": "HAS",
+				"invert": true
+			}
+		}
+	},
+	"collectible": true,
+	"set": "CUSTOM",
+	"fileFormatVersion": 1
+}

@@ -1,0 +1,28 @@
+{
+  "id": "minion_voodoo_totem",
+  "name": "Voodoo Totem",
+  "baseManaCost": 2,
+  "type": "MINION",
+  "baseAttack": 0,
+  "baseHp": 4,
+  "heroClass": "SHAMAN",
+  "rarity": "COMMON",
+  "description": "At the end of your turn, get a random spell.",
+  "race": "TOTEM",
+  "trigger": {
+    "eventTrigger": {
+      "class": "TurnEndTrigger",
+      "targetPlayer": "SELF"
+    },
+    "spell": {
+      "class": "ReceiveCardSpell",
+      "cardFilter": {
+        "class": "CardFilter",
+        "cardType": "SPELL"
+      }
+    }
+  },
+  "collectible": true,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

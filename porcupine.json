@@ -1,0 +1,28 @@
+{
+  "id": "minion_augmented_porcupine",
+  "name": "Augmented Porcupine",
+  "baseManaCost": 3,
+  "type": "MINION",
+  "baseAttack": 2,
+  "baseHp": 4,
+  "heroClass": "HUNTER",
+  "rarity": "EPIC",
+  "description": "Deathrattle: Deal this minion's Attack damage randomly split among all enemies.",
+  "race": "BEAST",
+  "deathrattle": {
+    "class": "MissilesSpell",
+    "target": "ENEMY_CHARACTERS",
+    "value": 1,
+    "howMany": {
+      "class": "AttributeValueProvider",
+      "target": "SELF",
+      "attribute": "ATTACK"
+    }
+  },
+  "attributes": {
+    "DEATHRATTLES": true
+  },
+  "collectible": true,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

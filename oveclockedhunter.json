@@ -1,0 +1,30 @@
+{
+  "id": "minion_overclocked_hunter",
+  "name": "Overclocked Hunter",
+  "baseManaCost": 4,
+  "type": "MINION",
+  "baseAttack": 3,
+  "baseHp": 4,
+  "heroClass": "HUNTER",
+  "rarity": "EPIC",
+  "description": "Whenever you summon a Mech, gain +1 Attack.",
+  "race": "MECH",
+  "trigger": {
+    "eventTrigger": {
+      "class": "MinionSummonedTrigger",
+      "targetPlayer": "SELF"
+    },
+    "spell": {
+      "class": "BuffSpell",
+      "target": "SELF",
+      "attackBonus": 1,
+      "filter": {
+        "class": "RaceFilter",
+        "race": "MECH"
+      }
+    }
+  },
+  "collectible": true,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

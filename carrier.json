@@ -1,0 +1,27 @@
+{
+  "id": "minion_carrier_whelp",
+  "name": "Carrier Whelp",
+  "baseManaCost": 1,
+  "type": "MINION",
+  "baseAttack": 1,
+  "baseHp": 2,
+  "heroClass": "WARRIOR",
+  "rarity": "COMMON",
+  "description": "Battlecry: Add a random Dragon to your hand.",
+  "battlecry": {
+    "targetSelection": "NONE",
+    "spell": {
+      "class": "ReceiveCardSpell",
+      "cardFilter": {
+        "class": "CardFilter",
+        "race": "DRAGON"
+      }
+    }
+  },
+  "attributes": {
+    "BATTLECRY": true
+  },
+  "collectible": true,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

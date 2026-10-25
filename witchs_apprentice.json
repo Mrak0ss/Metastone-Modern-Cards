@@ -1,0 +1,30 @@
+{
+	"id": "minion_witchs_apprentice",
+	"name": "Witch's Apprentice",
+	"baseManaCost": 0,
+	"type": "MINION",
+	"baseAttack": 0,
+	"baseHp": 1,
+	"heroClass": "SHAMAN",
+	"rarity": "COMMON",
+	"description": "Taunt. Battlecry: Add a random Shaman spell to your hand.",
+	"race": "BEAST",
+	"battlecry": {
+		"targetSelection": "NONE",
+		"spell": {
+			"class": "ReceiveCardSpell",
+			"cardFilter": {
+				"class": "CardFilter",
+				"cardType": "SPELL",
+				"heroClass": "SHAMAN"
+			}
+		}
+	},
+	"attributes": {
+		"BATTLECRY": true,
+		"TAUNT": true
+	},
+	"collectible": true,
+	"set": "CUSTOM",
+	"fileFormatVersion": 1
+}

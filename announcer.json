@@ -1,0 +1,35 @@
+{
+	"id": "minion_stadium_announcer",
+	"name": "Stadium Announcer",
+	"baseManaCost": 4,
+	"type": "MINION",
+	"baseAttack": 3,
+	"baseHp": 3,
+	"heroClass": "WARRIOR",
+	"rarity": "RARE",
+	"description": "Battlecry: Both players equip a random weapon. Give yours +1/+1.",
+	"race": "DRAGON",
+	"battlecry": {
+		"spell": {
+			"class": "MetaSpell",
+			"spells": [
+				{
+					"class": "EquipRandomWeaponSpell",
+					"targetPlayer": "BOTH"
+				},
+				{
+					"class": "BuffWeaponSpell",
+					"target": "FRIENDLY_WEAPON",
+					"attackBonus": 1,
+					"hpBonus": 1
+				}
+			]
+		}
+	},
+	"attributes": {
+		"BATTLECRY": true
+	},
+	"collectible": true,
+	"set": "CUSTOM",
+	"fileFormatVersion": 1
+}

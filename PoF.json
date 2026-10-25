@@ -1,0 +1,19 @@
+{
+  "id": "spell_prayer_of_fortitude",
+  "name": "Prayer of Fortitude",
+  "baseManaCost": 1,
+  "type": "SPELL",
+  "heroClass": "PRIEST",
+  "rarity": "COMMON",
+  "description": "Give your minions +1/+1.",
+  "targetSelection": "NONE",
+  "spell": {
+    "class": "BuffSpell",
+    "target": "FRIENDLY_MINIONS",
+    "attackBonus": 1,
+    "hpBonus": 1
+  },
+  "collectible": true,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

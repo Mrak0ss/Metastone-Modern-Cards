@@ -1,0 +1,28 @@
+{
+	"id": "minion_green_larva",
+	"name": "Green Larva",
+	"baseManaCost": 1,
+	"type": "MINION",
+	"baseAttack": 2,
+	"baseHp": 1,
+	"heroClass": "HUNTER",
+	"rarity": "RARE",
+	"description": "Combo: Deal 2 damage to the enemy hero.",
+	"battlecry": {
+		"targetSelection": "NONE",
+		"spell": {
+			"class": "DamageSpell",
+			"target": "ENEMY_HERO",
+			"value": 2
+		},
+		"condition": {
+			"class": "ComboCondition"
+		}
+	},
+	"attributes": {
+		"COMBO": true
+	},
+	"collectible": true,
+	"set": "CUSTOM",
+	"fileFormatVersion": 1
+}

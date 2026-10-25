@@ -1,0 +1,28 @@
+{
+  "id": "spell_death_wish",
+  "name": "Death Wish",
+  "baseManaCost": 3,
+  "type": "SPELL",
+  "heroClass": "WARRIOR",
+  "rarity": "RARE",
+  "description": "Gain +1 Attack this turn for each Armor you have.",
+  "targetSelection": "NONE",
+  "spell": {
+    "class": "BuffHeroSpell",
+    "target": "FRIENDLY_HERO",
+    "attackBonus": {
+      "class": "AttributeValueProvider",
+      "target": "FRIENDLY_HERO",
+      "attribute": "ARMOR"
+    },
+    "armorBonus": {
+      "class": "AttributeValueProvider",
+      "target": "FRIENDLY_HERO",
+      "attribute": "ARMOR",
+      "offset": -1
+    }
+  },
+  "collectible": true,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

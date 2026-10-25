@@ -1,0 +1,19 @@
+{
+	"id": "spell_blood_gem",
+	"name": "Blood Gem",
+	"baseManaCost": 0,
+	"type": "SPELL",
+	"heroClass": "ANY",
+	"rarity": "FREE",
+	"description": "Give a friendly minion +1/+1.",
+	"targetSelection": "FRIENDLY_MINIONS",
+	"spell": {
+		"class": "BuffSpell",
+		"target": "TARGET",
+		"attackBonus": 1,
+		"hpBonus": 1
+	},
+	"collectible": false,
+	"set": "CUSTOM",
+	"fileFormatVersion": 1
+}

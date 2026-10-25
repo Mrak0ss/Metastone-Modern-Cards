@@ -1,0 +1,26 @@
+{
+	"id": "minion_tumbling_disaster",
+	"name": "Tumbling Disaster",
+	"baseManaCost": 4,
+	"type": "MINION",
+	"baseAttack": 3,
+	"baseHp": 5,
+	"heroClass": "ANY",
+	"rarity": "RARE",
+	"description": "Whenever you summon a minion, give it +1/+1.",
+	"trigger": {
+		"eventTrigger": {
+			"class": "MinionSummonedTrigger",
+			"targetPlayer": "SELF"
+		},
+		"spell": {
+			"class": "BuffSpell",
+			"target": "EVENT_TARGET",
+			"attackBonus": 1,
+			"hpBonus": 1
+		}
+	},
+	"collectible": true,
+	"set": "CUSTOM",
+	"fileFormatVersion": 1
+}

@@ -1,0 +1,20 @@
+{
+  "id": "spell_air_raid",
+  "name": "Air Raid",
+  "baseManaCost": 2,
+  "type": "SPELL",
+  "heroClass": "PALADIN",
+  "rarity": "RARE",
+  "description": "Summon two 1/1 Silver Hand Recruits.",
+  "targetSelection": "NONE",
+  "spell": {
+    "class": "SummonSpell",
+    "cards": [
+      "token_silver_hand_recruit",
+      "token_silver_hand_recruit"
+    ]
+  },
+  "collectible": true,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

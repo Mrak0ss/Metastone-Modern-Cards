@@ -1,0 +1,18 @@
+{
+  "id": "minion_mana_reservoir",
+  "name": "Mana Reservoir",
+  "baseManaCost": 2,
+  "type": "MINION",
+  "baseAttack": 0,
+  "baseHp": 6,
+  "heroClass": "ANY",
+  "rarity": "COMMON",
+  "description": "Spell Damage +1.",
+  "race": "ELEMENTAL",
+  "attributes": {
+    "SPELLPOWER": 1
+  },
+  "collectible": true,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

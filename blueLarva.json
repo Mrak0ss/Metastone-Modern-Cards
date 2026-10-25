@@ -1,0 +1,32 @@
+{
+  "id": "minion_blue_larva",
+  "name": "Blue Larva",
+  "baseManaCost": 2,
+  "type": "MINION",
+  "baseAttack": 2,
+  "baseHp": 4,
+  "heroClass": "SHAMAN",
+  "rarity": "RARE",
+  "description": "Combo: Summon a random Totem.",
+  "race": "BEAST",
+  "battlecry": {
+    "targetSelection": "NONE",
+    "spell": {
+      "class": "SummonRandomMinionFilteredSpell",
+      "cardFilter": {
+        "class": "CardFilter",
+        "race": "TOTEM"
+      }
+    },
+    "condition": {
+      "class": "ComboCondition"
+    }
+  },
+  "attributes": {
+    "BATTLECRY": true,
+    "COMBO": true
+  },
+  "collectible": true,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

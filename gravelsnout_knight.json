@@ -1,0 +1,28 @@
+{
+  "id": "minion_gravelsnout_knight",
+  "name": "Gravelsnout Knight",
+  "baseManaCost": 1,
+  "type": "MINION",
+  "baseAttack": 2,
+  "baseHp": 3,
+  "heroClass": "ANY",
+  "rarity": "COMMON",
+  "description": "Battlecry: Summon a random 1-Cost minion for your opponent.",
+  "battlecry": {
+    "spell": {
+      "class": "SummonRandomMinionFilteredSpell",
+      "targetPlayer": "OPPONENT",
+      "cardFilter": {
+        "class": "CardFilter",
+        "cardType": "MINION",
+        "manaCost": 1
+      }
+    }
+  },
+  "attributes": {
+    "BATTLECRY": true
+  },
+  "collectible": true,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

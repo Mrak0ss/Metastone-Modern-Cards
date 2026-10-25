@@ -1,0 +1,23 @@
+{
+  "id": "minion_hench_clan_shadequill",
+  "name": "Hench-Clan Shadequill",
+  "baseManaCost": 4,
+  "type": "MINION",
+  "baseAttack": 4,
+  "baseHp": 7,
+  "heroClass": "PRIEST",
+  "rarity": "COMMON",
+  "description": "Deathrattle: Restore 5 Health to the enemy hero.",
+  "race": "QUILBOAR",
+  "deathrattle": {
+    "class": "HealSpell",
+    "target": "ENEMY_HERO",
+    "value": 5
+  },
+  "attributes": {
+    "DEATHRATTLES": true
+  },
+  "collectible": true,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

@@ -1,0 +1,27 @@
+{
+	"id": "weapon_craftsmans_hammer",
+	"name": "Craftsman's Hammer",
+	"baseManaCost": 3,
+	"type": "WEAPON",
+	"damage": 3,
+	"durability": 3,
+	"heroClass": "WARRIOR",
+	"rarity": "RARE",
+	"description": "Whenever your hero attacks, gain 4 Armor.",
+	"trigger": {
+		"eventTrigger": {
+			"class": "AfterPhysicalAttackTrigger",
+			"sourcePlayer": "SELF",
+			"targetPlayer": "BOTH",
+			"sourceEntityType": "HERO"
+		},
+		"spell": {
+			"class": "BuffHeroSpell",
+			"target": "FRIENDLY_HERO",
+			"armorBonus": 4
+		}
+	},
+	"collectible": true,
+	"set": "CUSTOM",
+	"fileFormatVersion": 1
+}

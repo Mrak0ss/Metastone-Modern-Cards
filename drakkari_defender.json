@@ -1,0 +1,18 @@
+{
+  "id": "minion_drakkari_defender",
+  "name": "Drakkari Defender",
+  "baseManaCost": 3,
+  "type": "MINION",
+  "baseAttack": 2,
+  "baseHp": 8,
+  "heroClass": "SHAMAN",
+  "rarity": "COMMON",
+  "description": "Taunt. Overload: (3)",
+  "attributes": {
+    "TAUNT": true,
+    "OVERLOAD": 3
+  },
+  "collectible": true,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

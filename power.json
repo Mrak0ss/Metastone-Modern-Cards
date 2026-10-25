@@ -1,0 +1,27 @@
+{
+  "id": "minion_power_tiger",
+  "name": "Power Tiger",
+  "baseManaCost": 8,
+  "type": "MINION",
+  "baseAttack": 6,
+  "baseHp": 6,
+  "heroClass": "ANY",
+  "rarity": "COMMON",
+  "race": "MECH",
+  "description": "At the start of each turn, attack a random enemy.",
+  "trigger": {
+    "eventTrigger": {
+      "class": "TurnStartTrigger",
+      "targetPlayer": "BOTH"
+    },
+    "spell": {
+      "class": "MissilesSpell",
+      "target": "ENEMY_CHARACTERS",
+      "value": 6,
+      "howMany": 1
+    }
+  },
+  "collectible": true,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

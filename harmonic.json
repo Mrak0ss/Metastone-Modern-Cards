@@ -1,0 +1,28 @@
+{
+  "id": "spell_harmonic_mood",
+  "name": "Harmonic Mood",
+  "baseManaCost": 2,
+  "type": "SPELL",
+  "heroClass": "DRUID",
+  "rarity": "COMMON",
+  "description": "Give your hero +2 Attack this turn. Gain 4 Armor.",
+  "targetSelection": "NONE",
+  "spell": {
+    "class": "MetaSpell",
+    "spells": [
+      {
+        "class": "BuffHeroSpell",
+        "target": "FRIENDLY_HERO",
+        "attackBonus": 2
+      },
+      {
+        "class": "BuffHeroSpell",
+        "target": "FRIENDLY_HERO",
+        "armorBonus": 4
+      }
+    ]
+  },
+  "collectible": true,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

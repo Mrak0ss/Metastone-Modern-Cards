@@ -1,0 +1,36 @@
+ {
+    "id": "minion_titanic_lackey",
+    "name": "Titanic Lackey",
+    "baseManaCost": 1,
+    "type": "MINION",
+    "baseAttack": 1,
+    "baseHp": 1,
+    "heroClass": "ANY",
+    "rarity": "COMMON",
+    "description": "Battlecry: Give a friendly minion +2/+2 and Taunt.",
+    "battlecry": {
+      "targetSelection": "MINIONS",
+      "spell": {
+        "class": "MetaSpell",
+        "spells": [
+          {
+            "class": "BuffSpell",
+            "target": "TARGET",
+            "attackBonus": 2,
+            "hpBonus": 2
+          },
+          {
+            "class": "AddAttributeSpell",
+            "target": "TARGET",
+            "attribute": "TAUNT"
+          }
+        ]
+      }
+    },
+    "attributes": {
+      "BATTLECRY": true
+    },
+    "collectible": true,
+    "set": "CUSTOM",
+    "fileFormatVersion": 1
+  }

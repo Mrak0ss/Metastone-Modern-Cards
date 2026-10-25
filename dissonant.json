@@ -1,0 +1,28 @@
+{
+  "id": "spell_dissonant_mood",
+  "name": "Dissonant Mood",
+  "baseManaCost": 2,
+  "type": "SPELL",
+  "heroClass": "DRUID",
+  "rarity": "COMMON",
+  "description": "Give your hero +4 Attack this turn. Gain 2 Armor.",
+  "targetSelection": "NONE",
+  "spell": {
+    "class": "MetaSpell",
+    "spells": [
+      {
+        "class": "BuffHeroSpell",
+        "target": "FRIENDLY_HERO",
+        "attackBonus": 4
+      },
+      {
+        "class": "BuffHeroSpell",
+        "target": "FRIENDLY_HERO",
+        "armorBonus": 2
+      }
+    ]
+  },
+  "collectible": true,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

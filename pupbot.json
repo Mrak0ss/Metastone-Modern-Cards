@@ -1,0 +1,18 @@
+{
+  "id": "minion_pupbot",
+  "name": "Pupbot",
+  "baseManaCost": 1,
+  "type": "MINION",
+  "baseAttack": 2,
+  "baseHp": 1,
+  "heroClass": "ANY",
+  "rarity": "FREE",
+  "description": "Divine Shield.",
+  "race": "MECH",
+  "attributes": {
+    "DIVINE_SHIELD": true
+  },
+  "collectible": true,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

@@ -1,0 +1,19 @@
+{
+	"id": "spell_erupting_volcano",
+	"name": "Erupting Volcano",
+	"baseManaCost": 3,
+	"type": "SPELL",
+	"heroClass": "WARRIOR",
+	"rarity": "RARE",
+	"description": "Deal 3 damage randomly split among enemies.",
+	"targetSelection": "NONE",
+	"spell": {
+		"class": "MissilesSpell",
+		"target": "ENEMY_CHARACTERS",
+		"value": 1,
+		"howMany": 3
+	},
+	"collectible": true,
+	"set": "CUSTOM",
+	"fileFormatVersion": 1
+}

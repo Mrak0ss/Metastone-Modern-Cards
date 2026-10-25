@@ -1,0 +1,15 @@
+{
+  "id": "minion_arcane_servant",
+  "name": "Arcane Servant",
+  "baseManaCost": 2,
+  "type": "MINION",
+  "baseAttack": 2,
+  "baseHp": 3,
+  "heroClass": "ANY",
+  "rarity": "COMMON",
+  "description": "",
+  "race": "ELEMENTAL",
+  "collectible": true,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

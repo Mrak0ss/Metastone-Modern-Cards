@@ -1,0 +1,32 @@
+{
+  "id": "spell_clockwork_boars",
+  "name": "Clockwork Boars",
+  "baseManaCost": 2,
+  "type": "SPELL",
+  "heroClass": "HUNTER",
+  "rarity": "COMMON",
+  "description": "Summon two random Mechs.",
+  "targetSelection": "NONE",
+  "spell": {
+    "class": "MetaSpell",
+    "spells": [
+      {
+        "class": "SummonRandomMinionFilteredSpell",
+        "cardFilter": {
+          "class": "CardFilter",
+          "race": "MECH"
+        }
+      },
+      {
+        "class": "SummonRandomMinionFilteredSpell",
+        "cardFilter": {
+          "class": "CardFilter",
+          "race": "MECH"
+        }
+      }
+    ]
+  },
+  "collectible": true,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

@@ -1,0 +1,18 @@
+{
+  "id": "spell_fury_rank_1",
+  "name": "Fury",
+  "baseManaCost": 1,
+  "type": "SPELL",
+  "heroClass": "ANY",
+  "rarity": "FREE",
+  "description": "Give your hero +2 Attack this turn.",
+  "targetSelection": "NONE",
+  "spell": {
+    "class": "BuffHeroSpell",
+    "target": "FRIENDLY_HERO",
+    "attackBonus": 2
+  },
+  "collectible": true,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}
