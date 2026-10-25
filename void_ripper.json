@@ -1,0 +1,24 @@
+{
+  "id": "minion_void_ripper",
+  "name": "Void Ripper",
+  "baseManaCost": 3,
+  "type": "MINION",
+  "baseAttack": 3,
+  "baseHp": 3,
+  "heroClass": "ANY",
+  "rarity": "EPIC",
+  "race": "DEMON",
+  "description": "Battlecry: Swap the Attack and Health of all other minions.",
+  "battlecry": {
+    "spell": {
+      "class": "SwapAttackAndHpSpell",
+      "target": "OTHER_MINIONS"
+    }
+  },
+  "attributes": {
+    "BATTLECRY": true
+  },
+  "collectible": true,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

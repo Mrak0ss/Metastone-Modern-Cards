@@ -1,0 +1,26 @@
+{
+  "id": "minion_swamp_dragon_egg",
+  "name": "Swamp Dragon Egg",
+  "baseManaCost": 1,
+  "type": "MINION",
+  "baseAttack": 0,
+  "baseHp": 3,
+  "heroClass": "ANY",
+  "rarity": "COMMON",
+  "description": "Deathrattle: Add a random Dragon to your hand.",
+  "deathrattle": {
+    "class": "ReceiveCardSpell",
+    "targetPlayer": "SELF",
+    "cardFilter": {
+      "class": "CardFilter",
+      "cardType": "MINION",
+      "race": "DRAGON"
+    }
+  },
+  "attributes": {
+    "DEATHRATTLES": true
+  },
+  "collectible": true,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

@@ -1,0 +1,38 @@
+{
+  "id": "minion_kul_tiran_warship",
+  "name": "Kul Tiran Warship",
+  "baseManaCost": 7,
+  "type": "MINION",
+  "baseAttack": 2,
+  "baseHp": 6,
+  "heroClass": "ANY",
+  "rarity": "COMMON",
+  "description": "Taunt. At the start of your turn, summon 2 random minions from your deck.",
+  "trigger": {
+    "eventTrigger": {
+      "class": "TurnStartTrigger",
+      "targetPlayer": "SELF"
+    },
+    "spell": {
+      "class": "MetaSpell",
+      "spells": [
+        {
+          "class": "PutRandomMinionOnBoardSpell",
+          "targetPlayer": "SELF",
+          "cardLocation": "DECK"
+        },
+        {
+          "class": "PutRandomMinionOnBoardSpell",
+          "targetPlayer": "SELF",
+          "cardLocation": "DECK"
+        }
+      ]
+    }
+  },
+  "attributes": {
+    "TAUNT": true
+  },
+  "collectible": true,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

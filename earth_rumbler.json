@@ -1,0 +1,19 @@
+{
+	"id": "minion_earth_rumbler",
+	"name": "Earth Rumbler",
+	"baseManaCost": 2,
+	"type": "MINION",
+	"baseAttack": 3,
+	"baseHp": 4,
+	"heroClass": "SHAMAN",
+	"rarity": "COMMON",
+	"race": "ELEMENTAL",
+	"description": "Taunt. Overload: (1).",
+	"attributes": {
+		"TAUNT": true,
+		"OVERLOAD": 1
+	},
+	"collectible": true,
+	"set": "CUSTOM",
+	"fileFormatVersion": 1
+}

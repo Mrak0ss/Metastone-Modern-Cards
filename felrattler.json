@@ -1,0 +1,25 @@
+{
+  "id": "minion_felrattler",
+  "name": "Felrattler",
+  "baseManaCost": 3,
+  "type": "MINION",
+  "baseAttack": 3,
+  "baseHp": 2,
+  "heroClass": "ANY",
+  "rarity": "COMMON",
+  "race": "BEAST",
+  "description": "Rush. Deathrattle: Deal 1 damage to all enemy minions.",
+  "deathrattle": {
+    "class": "DamageSpell",
+    "target": "ENEMY_MINIONS",
+    "value": 1
+  },
+  "attributes": {
+    "CHARGE": true,
+    "CANNOT_ATTACK_HERO_ON_SUMMON": true,
+    "DEATHRATTLES": true
+  },
+  "collectible": true,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

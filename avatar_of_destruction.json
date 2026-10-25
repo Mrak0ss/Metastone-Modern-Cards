@@ -1,0 +1,23 @@
+{
+  "id": "minion_avatar_of_destruction",
+  "name": "Avatar of Destruction",
+  "baseManaCost": 9,
+  "type": "MINION",
+  "baseAttack": 9,
+  "baseHp": 9,
+  "heroClass": "SHAMAN",
+  "rarity": "COMMON",
+  "description": "Taunt. Deathrattle: Deal 9 damage to all enemy minions.",
+  "deathrattle": {
+    "class": "DamageSpell",
+    "target": "ENEMY_MINIONS",
+    "value": 9
+  },
+  "attributes": {
+    "TAUNT": true,
+    "DEATHRATTLES": true
+  },
+  "collectible": true,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

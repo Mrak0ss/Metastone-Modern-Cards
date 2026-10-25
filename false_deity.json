@@ -1,0 +1,30 @@
+{
+	"id": "minion_false_deity",
+	"name": "False Deity",
+	"baseManaCost": 7,
+	"type": "MINION",
+	"baseAttack": 7,
+	"baseHp": 7,
+	"heroClass": "ANY",
+	"rarity": "COMMON",
+	"description": "Divine Shield. Elusive. Poisonous.",
+	"attributes": {
+		"DIVINE_SHIELD": true,
+		"UNTARGETABLE_BY_SPELLS": true,
+		"UNTARGETABLE_BY_HERO_POWERS": true
+	},
+	"trigger": {
+		"eventTrigger": {
+			"class": "DamageCausedTrigger",
+			"targetEntityType": "MINION",
+			"hostTargetType": "IGNORE_OTHER_SOURCES"
+		},
+		"spell": {
+			"class": "DestroySpell",
+			"target": "EVENT_TARGET"
+		}
+	},
+	"collectible": true,
+	"set": "CUSTOM",
+	"fileFormatVersion": 1
+}

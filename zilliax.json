@@ -1,0 +1,36 @@
+{
+  "id": "minion_zilliax",
+  "name": "Zilliax",
+  "baseManaCost": 5,
+  "type": "MINION",
+  "baseAttack": 3,
+  "baseHp": 2,
+  "heroClass": "ANY",
+  "rarity": "LEGENDARY",
+  "race": "MECHANICAL",
+  "description": "Divine Shield. Taunt. Lifesteal. Rush.",
+  "attributes": {
+    "CHARGE": true,
+    "CANNOT_ATTACK_HERO_ON_SUMMON": true,
+    "DIVINE_SHIELD": true,
+    "TAUNT": true
+  },
+  "trigger": {
+    "eventTrigger": {
+      "class": "DamageCausedTrigger",
+      "hostTargetType": "IGNORE_OTHER_SOURCES"
+    },
+    "spell": {
+      "class": "HealSpell",
+      "target": "FRIENDLY_HERO",
+      "value": {
+        "class": "AttributeValueProvider",
+        "target": "EVENT_TARGET",
+        "attribute": "LAST_HIT"
+      }
+    }
+  },
+  "collectible": true,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

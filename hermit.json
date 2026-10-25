@@ -1,0 +1,18 @@
+{
+  "id": "minion_helmet_hermit",
+  "name": "Helmet Hermit",
+  "baseManaCost": 1,
+  "type": "MINION",
+  "baseAttack": 4,
+  "baseHp": 3,
+  "heroClass": "ANY",
+  "rarity": "RARE",
+  "race": "BEAST",
+  "description": "Can't Attack.",
+  "attributes": {
+    "CANNOT_ATTACK": true
+  },
+  "collectible": true,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

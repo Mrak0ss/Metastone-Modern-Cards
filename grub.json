@@ -1,0 +1,15 @@
+{
+  "id": "minion_grub",
+  "name": "Grub",
+  "baseManaCost": 1,
+  "type": "MINION",
+  "baseAttack": 1,
+  "baseHp": 1,
+  "heroClass": "ANY",
+  "rarity": "COMMON",
+  "race": "BEAST",
+  "description": "",
+  "collectible": true,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

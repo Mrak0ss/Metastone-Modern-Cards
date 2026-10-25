@@ -1,0 +1,33 @@
+{
+  "id": "minion_bloodsail_recruiter",
+  "name": "Bloodsail Recruiter",
+  "baseManaCost": 2,
+  "type": "MINION",
+  "baseAttack": 4,
+  "baseHp": 1,
+  "heroClass": "ANY",
+  "rarity": "COMMON",
+  "race": "PIRATE",
+  "description": "Battlecry: Discover a Pirate.",
+  "battlecry": {
+    "targetSelection": "NONE",
+    "spell": {
+      "class": "DiscoverRandomCardSpell",
+      "spell": {
+        "class": "ReceiveCardSpell",
+        "targetPlayer": "SELF"
+      },
+      "cardFilter": {
+        "class": "CardFilter",
+        "cardType": "MINION",
+        "race": "PIRATE"
+      }
+    }
+  },
+  "attributes": {
+    "BATTLECRY": true
+  },
+  "collectible": true,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

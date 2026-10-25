@@ -1,0 +1,27 @@
+{
+  "id": "spell_grimoire_of_sacrifice",
+  "name": "Grimoire of Sacrifice",
+  "baseManaCost": 1,
+  "type": "SPELL",
+  "heroClass": "WARLOCK",
+  "rarity": "COMMON",
+  "description": "Destroy a friendly minion. Deal 2 damage to all enemy minions.",
+  "targetSelection": "FRIENDLY_MINIONS",
+  "spell": {
+    "class": "MetaSpell",
+    "spells": [
+      {
+        "class": "DestroySpell",
+        "target": "TARGET"
+      },
+      {
+        "class": "DamageSpell",
+        "target": "ENEMY_MINIONS",
+        "value": 2
+      }
+    ]
+  },
+  "collectible": true,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

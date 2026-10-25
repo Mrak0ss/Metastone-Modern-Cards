@@ -1,0 +1,37 @@
+{
+  "id": "minion_daelin_proudmoore_brukan",
+  "name": "Daelin Proudmoore",
+  "baseManaCost": 5,
+  "type": "MINION",
+  "baseAttack": 2,
+  "baseHp": 6,
+  "heroClass": "ANY",
+  "rarity": "LEGENDARY",
+  "description": "At the start of your turn, deal 2 damage to a random enemy twice.",
+  "trigger": {
+    "eventTrigger": {
+      "class": "TurnStartTrigger",
+      "targetPlayer": "SELF"
+    },
+    "spell": {
+      "class": "MetaSpell",
+      "spells": [
+        {
+          "class": "DamageSpell",
+          "target": "ENEMY_CHARACTERS",
+          "value": 2,
+          "randomTarget": true
+        },
+        {
+          "class": "DamageSpell",
+          "target": "ENEMY_CHARACTERS",
+          "value": 2,
+          "randomTarget": true
+        }
+      ]
+    }
+  },
+  "collectible": false,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

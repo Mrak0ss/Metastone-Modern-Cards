@@ -1,0 +1,25 @@
+{
+	"id": "weapon_staff_of_antonidas",
+	"name": "Staff of Antonidas",
+	"baseManaCost": 7,
+	"type": "WEAPON",
+	"damage": 0,
+	"durability": 3,
+	"heroClass": "MAGE",
+	"rarity": "LEGENDARY",
+	"description": "Whenever you cast a spell, add a Fireball to your hand.",
+	"trigger": {
+		"eventTrigger": {
+			"class": "SpellCastedTrigger",
+			"sourcePlayer": "SELF"
+		},
+		"spell": {
+			"class": "ReceiveCardSpell",
+			"card": "spell_fireball",
+			"targetPlayer": "SELF"
+		}
+	},
+	"collectible": true,
+	"set": "CUSTOM",
+	"fileFormatVersion": 1
+}

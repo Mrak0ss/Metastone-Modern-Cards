@@ -1,0 +1,33 @@
+{
+  "id": "minion_saddlemaster",
+  "name": "Saddlemaster",
+  "baseManaCost": 3,
+  "type": "MINION",
+  "baseAttack": 3,
+  "baseHp": 4,
+  "heroClass": "HUNTER",
+  "rarity": "RARE",
+  "description": "After you play a Beast, add a random Beast to your hand.",
+  "trigger": {
+    "eventTrigger": {
+      "class": "MinionPlayedTrigger",
+      "targetPlayer": "SELF",
+      "cardFilter": {
+        "class": "RaceFilter",
+        "race": "BEAST"
+      }
+    },
+    "spell": {
+      "class": "ReceiveCardSpell",
+      "targetPlayer": "SELF",
+      "cardFilter": {
+        "class": "CardFilter",
+        "cardType": "MINION",
+        "race": "BEAST"
+      }
+    }
+  },
+  "collectible": true,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

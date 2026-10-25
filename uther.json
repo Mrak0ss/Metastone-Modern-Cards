@@ -1,0 +1,27 @@
+{
+	"id": "spell_uther_of_the_ebon_blade",
+	"name": "Uther of the Ebon Blade",
+	"baseManaCost": 7,
+	"type": "SPELL",
+	"heroClass": "PALADIN",
+	"rarity": "LEGENDARY",
+	"description": "Equip a 5/3 weapon. Gain 5 Armor.",
+	"targetSelection": "NONE",
+	"spell": {
+		"class": "MetaSpell",
+		"spells": [
+			{
+				"class": "EquipWeaponSpell",
+				"card": "weapon_ashbringer"
+			},
+			{
+				"class": "BuffHeroSpell",
+				"target": "FRIENDLY_HERO",
+				"armorBonus": 5
+			}
+		]
+	},
+	"collectible": true,
+	"set": "CUSTOM",
+	"fileFormatVersion": 1
+}

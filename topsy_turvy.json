@@ -1,0 +1,16 @@
+{
+	"id": "spell_topsy_turvy",
+	"name": "Topsy Turvy",
+	"baseManaCost": 0,
+	"type": "SPELL",
+	"heroClass": "PRIEST",
+	"rarity": "COMMON",
+	"description": "Swap the Attack and Health of a minion.",
+	"targetSelection": "MINIONS",
+	"spell": {
+		"class": "SwapAttackAndHpSpell"
+	},
+	"collectible": true,
+	"set": "CUSTOM",
+	"fileFormatVersion": 1
+}

@@ -1,0 +1,22 @@
+{
+	"id": "spell_shadow_dance",
+	"name": "Shadow Dance",
+	"baseManaCost": 2,
+	"type": "SPELL",
+	"heroClass": "ROGUE",
+	"rarity": "COMMON",
+	"description": "Deal 1 damage to all undamaged minions.",
+	"targetSelection": "NONE",
+	"spell": {
+		"class": "DamageSpell",
+		"target": "ALL_MINIONS",
+		"value": 1,
+		"filter": {
+			"class": "DamagedFilter",
+			"invert": true
+		}
+	},
+	"collectible": false,
+	"set": "CUSTOM",
+	"fileFormatVersion": 1
+}

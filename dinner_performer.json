@@ -1,0 +1,24 @@
+{
+  "id": "minion_dinner_performer",
+  "name": "Dinner Performer",
+  "baseManaCost": 3,
+  "type": "MINION",
+  "baseAttack": 2,
+  "baseHp": 3,
+  "heroClass": "ANY",
+  "rarity": "COMMON",
+  "description": "Battlecry: Summon a random minion from your deck.",
+  "battlecry": {
+    "spell": {
+      "class": "PutRandomMinionOnBoardSpell",
+      "targetPlayer": "SELF",
+      "cardLocation": "DECK"
+    }
+  },
+  "attributes": {
+    "BATTLECRY": true
+  },
+  "collectible": true,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

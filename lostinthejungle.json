@@ -1,0 +1,21 @@
+{
+	"id": "spell_lost_in_the_jungle",
+	"name": "Lost in the Jungle",
+	"baseManaCost": 1,
+	"type": "SPELL",
+	"heroClass": "PALADIN",
+	"rarity": "COMMON",
+	"description": "Summon two 1/1 Silver Hand Recruits.",
+	"targetSelection": "NONE",
+	"spell": {
+		"class": "SummonSpell",
+		"targetPlayer": "SELF",
+		"cards": [
+			"token_silver_hand_recruit",
+			"token_silver_hand_recruit"
+		]
+	},
+	"collectible": true,
+	"set": "CUSTOM",
+	"fileFormatVersion": 1
+}

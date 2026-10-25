@@ -1,0 +1,63 @@
+{
+  "id": "minion_master_oakheart",
+  "name": "Master Oakheart",
+  "baseManaCost": 9,
+  "type": "MINION",
+  "baseAttack": 5,
+  "baseHp": 5,
+  "heroClass": "ANY",
+  "rarity": "LEGENDARY",
+  "description": "Battlecry: Recruit a 1, 2, and 3-Attack minion.",
+  "battlecry": {
+    "spell": {
+      "class": "MetaSpell",
+      "spells": [
+        {
+          "class": "PutRandomMinionOnBoardSpell",
+          "value": 1,
+          "targetPlayer": "SELF",
+          "cardLocation": "DECK",
+          "cardFilter": {
+            "class": "CardFilter",
+            "cardType": "MINION",
+            "attribute": "BASE_ATTACK",
+            "operation": "EQUAL",
+            "value": 1
+          }
+        },
+        {
+          "class": "PutRandomMinionOnBoardSpell",
+          "value": 1,
+          "targetPlayer": "SELF",
+          "cardLocation": "DECK",
+          "cardFilter": {
+            "class": "CardFilter",
+            "cardType": "MINION",
+            "attribute": "BASE_ATTACK",
+            "operation": "EQUAL",
+            "value": 2
+          }
+        },
+        {
+          "class": "PutRandomMinionOnBoardSpell",
+          "value": 1,
+          "targetPlayer": "SELF",
+          "cardLocation": "DECK",
+          "cardFilter": {
+            "class": "CardFilter",
+            "cardType": "MINION",
+            "attribute": "BASE_ATTACK",
+            "operation": "EQUAL",
+            "value": 3
+          }
+        }
+      ]
+    }
+  },
+  "attributes": {
+    "BATTLECRY": true
+  },
+  "collectible": true,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

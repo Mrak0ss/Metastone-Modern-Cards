@@ -1,0 +1,18 @@
+{
+	"id": "minion_giant_mastodon",
+	"name": "Giant Mastodon",
+	"baseManaCost": 9,
+	"type": "MINION",
+	"baseAttack": 6,
+	"baseHp": 12,
+	"heroClass": "ANY",
+	"rarity": "COMMON",
+	"race": "BEAST",
+	"description": "Taunt.",
+	"attributes": {
+		"TAUNT": true
+	},
+	"collectible": true,
+	"set": "CUSTOM",
+	"fileFormatVersion": 1
+}

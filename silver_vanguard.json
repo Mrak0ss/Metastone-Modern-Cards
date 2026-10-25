@@ -1,0 +1,30 @@
+{
+  "id": "minion_silver_vanguard",
+  "name": "Silver Vanguard",
+  "baseManaCost": 7,
+  "type": "MINION",
+  "baseAttack": 3,
+  "baseHp": 3,
+  "heroClass": "ANY",
+  "rarity": "RARE",
+  "description": "Deathrattle: Recruit an 8-Cost minion.",
+  "deathrattle": {
+    "class": "PutRandomMinionOnBoardSpell",
+    "value": 1,
+    "targetPlayer": "SELF",
+    "cardLocation": "DECK",
+    "cardFilter": {
+      "class": "CardFilter",
+      "cardType": "MINION",
+      "attribute": "BASE_MANA_COST",
+      "operation": "EQUAL",
+      "value": 8
+    }
+  },
+  "attributes": {
+    "DEATHRATTLE": true
+  },
+  "collectible": true,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

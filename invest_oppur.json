@@ -1,0 +1,22 @@
+{
+	"id": "spell_investment_opportunity",
+	"name": "Investment Opportunity",
+	"baseManaCost": 1,
+	"type": "SPELL",
+	"heroClass": "SHAMAN",
+	"rarity": "COMMON",
+	"description": "Draw an Overload card.",
+	"targetSelection": "NONE",
+	"spell": {
+		"class": "FromDeckToHandSpell",
+		"value": 1,
+		"cardFilter": {
+			"class": "CardFilter",
+			"attribute": "OVERLOAD",
+			"operation": "HAS"
+		}
+	},
+	"collectible": true,
+	"set": "CUSTOM",
+	"fileFormatVersion": 1
+}

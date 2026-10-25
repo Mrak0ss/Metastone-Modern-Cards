@@ -1,0 +1,30 @@
+{
+  "id": "minion_sky_raider",
+  "name": "Sky Raider",
+  "baseManaCost": 1,
+  "type": "MINION",
+  "baseAttack": 1,
+  "baseHp": 2,
+  "heroClass": "WARRIOR",
+  "rarity": "COMMON",
+  "race": "PIRATE",
+  "description": "Battlecry: Add a random Pirate to your hand.",
+  "battlecry": {
+    "targetSelection": "NONE",
+    "spell": {
+      "class": "ReceiveCardSpell",
+      "targetPlayer": "SELF",
+      "cardFilter": {
+        "class": "CardFilter",
+        "cardType": "MINION",
+        "race": "PIRATE"
+      }
+    }
+  },
+  "attributes": {
+    "BATTLECRY": true
+  },
+  "collectible": true,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

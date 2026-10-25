@@ -1,0 +1,20 @@
+{
+	"id": "spell_devastate",
+	"name": "Devastate",
+	"baseManaCost": 1,
+	"type": "SPELL",
+	"heroClass": "WARRIOR",
+	"rarity": "COMMON",
+	"description": "Deal 4 damage to a damaged minion.",
+	"targetSelection": "MINIONS",
+	"spell": {
+		"class": "DamageSpell",
+		"value": 4,
+		"filter": {
+			"class": "DamagedFilter"
+		}
+	},
+	"collectible": true,
+	"set": "CUSTOM",
+	"fileFormatVersion": 1
+}

@@ -1,0 +1,28 @@
+{
+  "id": "minion_possessed_lackey",
+  "name": "Possessed Lackey",
+  "baseManaCost": 5,
+  "type": "MINION",
+  "baseAttack": 2,
+  "baseHp": 2,
+  "heroClass": "WARLOCK",
+  "rarity": "RARE",
+  "description": "Deathrattle: Recruit a Demon.",
+  "deathrattle": {
+    "class": "PutRandomMinionOnBoardSpell",
+    "value": 1,
+    "targetPlayer": "SELF",
+    "cardLocation": "DECK",
+    "cardFilter": {
+      "class": "CardFilter",
+      "cardType": "MINION",
+      "race": "DEMON"
+    }
+  },
+  "attributes": {
+    "DEATHRATTLE": true
+  },
+  "collectible": true,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

@@ -1,0 +1,29 @@
+{
+  "id": "minion_yellow_larva",
+  "name": "Yellow Larva",
+  "baseManaCost": 1,
+  "type": "MINION",
+  "baseAttack": 2,
+  "baseHp": 1,
+  "heroClass": "PALADIN",
+  "rarity": "COMMON",
+  "race": "BEAST",
+  "description": "Combo: Summon a 1/1 Silver Hand Recruit.",
+  "battlecry": {
+    "spell": {
+      "class": "SummonSpell",
+      "card": "token_silver_hand_recruit",
+      "boardPositionRelative": "RIGHT"
+    },
+    "condition": {
+      "class": "ComboCondition"
+    }
+  },
+  "attributes": {
+    "BATTLECRY": true,
+    "COMBO": true
+  },
+  "collectible": true,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

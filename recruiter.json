@@ -1,0 +1,33 @@
+{
+  "id": "minion_guild_recruiter",
+  "name": "Guild Recruiter",
+  "baseManaCost": 5,
+  "type": "MINION",
+  "baseAttack": 2,
+  "baseHp": 4,
+  "heroClass": "ANY",
+  "rarity": "RARE",
+  "race": "DRAENEI",
+  "description": "Battlecry: Recruit a minion that costs (4) or less.",
+  "battlecry": {
+    "spell": {
+      "class": "PutRandomMinionOnBoardSpell",
+      "value": 1,
+      "targetPlayer": "SELF",
+      "cardLocation": "DECK",
+      "cardFilter": {
+        "class": "CardFilter",
+        "cardType": "MINION",
+        "attribute": "BASE_MANA_COST",
+        "operation": "LESS_OR_EQUAL",
+        "value": 4
+      }
+    }
+  },
+  "attributes": {
+    "BATTLECRY": true
+  },
+  "collectible": true,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

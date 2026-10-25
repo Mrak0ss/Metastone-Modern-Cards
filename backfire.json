@@ -1,0 +1,27 @@
+{
+	"id": "spell_backfire",
+	"name": "Backfire",
+	"baseManaCost": 3,
+	"type": "SPELL",
+	"heroClass": "WARLOCK",
+	"rarity": "COMMON",
+	"description": "Draw 3 cards. Deal 3 damage to your hero.",
+	"targetSelection": "NONE",
+	"spell": {
+		"class": "MetaSpell",
+		"spells": [
+			{
+				"class": "DrawCardSpell",
+				"value": 3
+			},
+			{
+				"class": "DamageSpell",
+				"target": "FRIENDLY_HERO",
+				"value": 3
+			}
+		]
+	},
+	"collectible": true,
+	"set": "CUSTOM",
+	"fileFormatVersion": 1
+}

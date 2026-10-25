@@ -1,0 +1,35 @@
+{
+  "id": "minion_opera_soloist",
+  "name": "Opera Soloist",
+  "baseManaCost": 5,
+  "type": "MINION",
+  "baseAttack": 4,
+  "baseHp": 6,
+  "heroClass": "WARLOCK",
+  "rarity": "COMMON",
+  "race": "DEMON",
+  "description": "Battlecry: If you control no other minions, deal 3 damage to all enemy minions.",
+  "battlecry": {
+    "targetSelection": "NONE",
+    "spell": {
+      "class": "ConditionalSpell",
+      "spell": {
+        "class": "DamageSpell",
+        "target": "ENEMY_MINIONS",
+        "value": 3
+      },
+      "condition": {
+        "class": "MinionCountCondition",
+        "targetPlayer": "SELF",
+        "operation": "EQUAL",
+        "value": 1
+      }
+    }
+  },
+  "attributes": {
+    "BATTLECRY": true
+  },
+  "collectible": true,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

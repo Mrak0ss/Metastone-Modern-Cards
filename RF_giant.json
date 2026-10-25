@@ -1,0 +1,25 @@
+{
+  "id": "minion_rusted_fungal_giant",
+  "name": "Rusted Fungal Giant",
+  "baseManaCost": 6,
+  "type": "MINION",
+  "baseAttack": 8,
+  "baseHp": 4,
+  "heroClass": "ANY",
+  "rarity": "COMMON",
+  "description": "Deathrattle: Summon a random Mech.",
+  "deathrattle": {
+    "class": "SummonRandomMinionFilteredSpell",
+    "targetPlayer": "SELF",
+    "cardFilter": {
+      "class": "CardFilter",
+      "race": "MECH"
+    }
+  },
+  "attributes": {
+    "DEATHRATTLE": true
+  },
+  "collectible": true,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

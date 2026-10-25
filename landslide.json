@@ -1,0 +1,18 @@
+{
+  "id": "spell_landslide",
+  "name": "Landslide",
+  "baseManaCost": 2,
+  "type": "SPELL",
+  "heroClass": "SHAMAN",
+  "rarity": "RARE",
+  "description": "Deal 1 damage to all enemy minions.",
+  "targetSelection": "NONE",
+  "spell": {
+    "class": "DamageSpell",
+    "target": "ENEMY_MINIONS",
+    "value": 1
+  },
+  "collectible": true,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

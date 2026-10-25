@@ -1,0 +1,21 @@
+{
+	"id": "spell_circular_chop",
+	"name": "Circular Chop",
+	"baseManaCost": 0,
+	"type": "SPELL",
+	"heroClass": "WARRIOR",
+	"rarity": "COMMON",
+	"description": "Deal 1 damage to all damaged minions.",
+	"targetSelection": "NONE",
+	"spell": {
+		"class": "DamageSpell",
+		"target": "ALL_MINIONS",
+		"value": 1,
+		"filter": {
+			"class": "DamagedFilter"
+		}
+	},
+	"collectible": true,
+	"set": "CUSTOM",
+	"fileFormatVersion": 1
+}

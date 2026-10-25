@@ -1,0 +1,27 @@
+{
+  "id": "minion_shallow_gravedigger",
+  "name": "Shallow Gravedigger",
+  "baseManaCost": 3,
+  "type": "MINION",
+  "baseAttack": 3,
+  "baseHp": 1,
+  "heroClass": "ANY",
+  "rarity": "RARE",
+  "description": "Deathrattle: Add a random Deathrattle minion to your hand.",
+  "deathrattle": {
+    "class": "ReceiveCardSpell",
+    "targetPlayer": "SELF",
+    "cardFilter": {
+      "class": "CardFilter",
+      "cardType": "MINION",
+      "attribute": "DEATHRATTLES",
+      "operation": "HAS"
+    }
+  },
+  "attributes": {
+    "DEATHRATTLES": true
+  },
+  "collectible": true,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

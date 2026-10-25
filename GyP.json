@@ -1,0 +1,23 @@
+{
+  "id": "spell_gather_your_party",
+  "name": "Gather Your Party",
+  "baseManaCost": 6,
+  "type": "SPELL",
+  "heroClass": "WARRIOR",
+  "rarity": "RARE",
+  "description": "Recruit a minion.",
+  "targetSelection": "NONE",
+  "spell": {
+    "class": "PutRandomMinionOnBoardSpell",
+    "value": 1,
+    "targetPlayer": "SELF",
+    "cardLocation": "DECK",
+    "cardFilter": {
+      "class": "CardFilter",
+      "cardType": "MINION"
+    }
+  },
+  "collectible": true,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

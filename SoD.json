@@ -1,0 +1,18 @@
+{
+  "id": "minion_specter_of_despair",
+  "name": "Specter of Despair",
+  "baseManaCost": 2,
+  "type": "MINION",
+  "baseAttack": 2,
+  "baseHp": 6,
+  "heroClass": "PRIEST",
+  "rarity": "COMMON",
+  "description": "Taunt. Can't Attack.",
+  "attributes": {
+    "TAUNT": true,
+    "CANNOT_ATTACK": true
+  },
+  "collectible": true,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

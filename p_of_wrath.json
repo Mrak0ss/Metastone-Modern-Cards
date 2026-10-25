@@ -1,0 +1,20 @@
+{
+	"id": "spell_plague_of_wrath",
+	"name": "Plague of Wrath",
+	"baseManaCost": 5,
+	"type": "SPELL",
+	"heroClass": "WARRIOR",
+	"rarity": "RARE",
+	"description": "Destroy all damaged minions.",
+	"targetSelection": "NONE",
+	"spell": {
+		"class": "DestroySpell",
+		"target": "ALL_MINIONS",
+		"filter": {
+			"class": "DamagedFilter"
+		}
+	},
+	"collectible": true,
+	"set": "CUSTOM",
+	"fileFormatVersion": 1
+}

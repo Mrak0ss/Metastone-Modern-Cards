@@ -1,0 +1,30 @@
+{
+  "id": "minion_time_twisted_seer_mage",
+  "name": "Time-Twisted Seer",
+  "baseManaCost": 3,
+  "type": "MINION",
+  "baseAttack": 1,
+  "baseHp": 3,
+  "heroClass": "MAGE",
+  "rarity": "RARE",
+  "race": "DRAGON",
+  "description": "Enrage: Has Spell Damage +2 while damaged.",
+  "trigger": {
+    "eventTrigger": {
+      "class": "EnrageChangedTrigger"
+    },
+    "spell": {
+      "class": "EnrageSpell",
+      "target": "SELF",
+      "attributes": {
+        "SPELL_DAMAGE": 2
+      }
+    }
+  },
+  "attributes": {
+    "ENRAGABLE": true
+  },
+  "collectible": true,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

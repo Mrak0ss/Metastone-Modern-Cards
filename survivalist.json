@@ -1,0 +1,37 @@
+{
+	"id": "minion_survivalist",
+	"name": "Survivalist",
+	"baseManaCost": 6,
+	"type": "MINION",
+	"baseAttack": 6,
+	"baseHp": 6,
+	"heroClass": "ANY",
+	"rarity": "RARE",
+	"description": "While you control no other minions, your Hero is Immune.",
+	"trigger": {
+		"eventTrigger": {
+			"class": "BoardChangedTrigger"
+		},
+		"spell": {
+			"class": "EitherOrSpell",
+			"target": "SELF",
+			"spell1": {
+				"class": "AddAttributeSpell",
+				"attribute": "IMMUNE_HERO"
+			},
+			"spell2": {
+				"class": "RemoveAttributeSpell",
+				"attribute": "IMMUNE_HERO"
+			},
+			"condition": {
+				"class": "MinionCountCondition",
+				"targetPlayer": "SELF",
+				"operation": "EQUAL",
+				"value": 1
+			}
+		}
+	},
+	"collectible": true,
+	"set": "CUSTOM",
+	"fileFormatVersion": 1
+}

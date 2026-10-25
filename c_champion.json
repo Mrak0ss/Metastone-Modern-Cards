@@ -1,0 +1,32 @@
+{
+  "id": "minion_chillblade_champion",
+  "name": "Chillblade Champion",
+  "baseManaCost": 4,
+  "type": "MINION",
+  "baseAttack": 3,
+  "baseHp": 2,
+  "heroClass": "PALADIN",
+  "rarity": "COMMON",
+  "description": "Charge. Lifesteal.",
+  "attributes": {
+    "CHARGE": true
+  },
+  "trigger": {
+    "eventTrigger": {
+      "class": "DamageCausedTrigger",
+      "hostTargetType": "IGNORE_OTHER_SOURCES"
+    },
+    "spell": {
+      "class": "HealSpell",
+      "target": "FRIENDLY_HERO",
+      "value": {
+        "class": "AttributeValueProvider",
+        "target": "EVENT_TARGET",
+        "attribute": "LAST_HIT"
+      }
+    }
+  },
+  "collectible": true,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

@@ -1,0 +1,21 @@
+{
+	"id": "spell_beakered_lightning",
+	"name": "Beakered Lightning",
+	"baseManaCost": 0,
+	"type": "SPELL",
+	"heroClass": "SHAMAN",
+	"rarity": "COMMON",
+	"description": "Deal 1 damage to all minions. Overload: (2)",
+	"targetSelection": "NONE",
+	"spell": {
+		"class": "DamageSpell",
+		"target": "ALL_MINIONS",
+		"value": 1
+	},
+	"attributes": {
+		"OVERLOAD": 2
+	},
+	"collectible": true,
+	"set": "CUSTOM",
+	"fileFormatVersion": 1
+}

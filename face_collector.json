@@ -1,0 +1,30 @@
+{
+  "id": "minion_face_collector",
+  "name": "Face Collector",
+  "baseManaCost": 3,
+  "type": "MINION",
+  "baseAttack": 2,
+  "baseHp": 2,
+  "heroClass": "ROGUE",
+  "rarity": "LEGENDARY",
+  "race": "ELEMENTAL",
+  "description": "Battlecry: Add a random Legendary minion to your hand.",
+  "battlecry": {
+    "targetSelection": "NONE",
+    "spell": {
+      "class": "ReceiveCardSpell",
+      "targetPlayer": "SELF",
+      "cardFilter": {
+        "class": "CardFilter",
+        "cardType": "MINION",
+        "rarity": "LEGENDARY"
+      }
+    }
+  },
+  "attributes": {
+    "BATTLECRY": true
+  },
+  "collectible": true,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

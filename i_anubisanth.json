@@ -1,0 +1,18 @@
+{
+	"id": "minion_imposing_anubisath",
+	"name": "Imposing Anubisath",
+	"baseManaCost": 4,
+	"type": "MINION",
+	"baseAttack": 7,
+	"baseHp": 7,
+	"heroClass": "ANY",
+	"rarity": "COMMON",
+	"description": "Taunt. Can't Attack.",
+	"attributes": {
+		"TAUNT": true,
+		"CANNOT_ATTACK": true
+	},
+	"collectible": true,
+	"set": "CUSTOM",
+	"fileFormatVersion": 1
+}

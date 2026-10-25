@@ -1,0 +1,27 @@
+{
+	"id": "minion_anubisath_warbringer",
+	"name": "Anubisath Warbringer",
+	"baseManaCost": 9,
+	"type": "MINION",
+	"baseAttack": 9,
+	"baseHp": 6,
+	"heroClass": "ANY",
+	"rarity": "RARE",
+	"description": "Deathrattle: Give all minions in your hand +2/+2.",
+	"deathrattle": {
+		"class": "BuffSpell",
+		"target": "FRIENDLY_HAND",
+		"attackBonus": 2,
+		"hpBonus": 2,
+		"filter": {
+			"class": "CardFilter",
+			"cardType": "MINION"
+		}
+	},
+	"attributes": {
+		"DEATHRATTLES": true
+	},
+	"collectible": true,
+	"set": "CUSTOM",
+	"fileFormatVersion": 1
+}

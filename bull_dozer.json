@@ -1,0 +1,18 @@
+{
+	"id": "minion_bull_dozer",
+	"name": "Bull Dozer",
+	"baseManaCost": 9,
+	"type": "MINION",
+	"baseAttack": 9,
+	"baseHp": 7,
+	"heroClass": "ANY",
+	"rarity": "EPIC",
+	"race": "MECH",
+	"description": "Divine Shield.",
+	"attributes": {
+		"DIVINE_SHIELD": true
+	},
+	"collectible": true,
+	"set": "CUSTOM",
+	"fileFormatVersion": 1
+}

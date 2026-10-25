@@ -1,0 +1,24 @@
+{
+  "id": "minion_soulstealer",
+  "name": "Soulstealer",
+  "baseManaCost": 8,
+  "type": "MINION",
+  "baseAttack": 5,
+  "baseHp": 5,
+  "heroClass": "WARLOCK",
+  "rarity": "EPIC",
+  "description": "Battlecry: Destroy all other minions.",
+  "battlecry": {
+    "targetSelection": "NONE",
+    "spell": {
+      "class": "DestroySpell",
+      "target": "ALL_OTHER_MINIONS"
+    }
+  },
+  "attributes": {
+    "BATTLECRY": true
+  },
+  "collectible": true,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

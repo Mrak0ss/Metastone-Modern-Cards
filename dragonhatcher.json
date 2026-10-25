@@ -1,0 +1,31 @@
+{
+  "id": "minion_dragonhatcher",
+  "name": "Dragonhatcher",
+  "baseManaCost": 9,
+  "type": "MINION",
+  "baseAttack": 2,
+  "baseHp": 4,
+  "heroClass": "ANY",
+  "rarity": "EPIC",
+  "description": "At the end of your turn, Recruit a Dragon.",
+  "trigger": {
+    "eventTrigger": {
+      "class": "TurnEndTrigger",
+      "targetPlayer": "SELF"
+    },
+    "spell": {
+      "class": "PutRandomMinionOnBoardSpell",
+      "value": 1,
+      "targetPlayer": "SELF",
+      "cardLocation": "DECK",
+      "cardFilter": {
+        "class": "CardFilter",
+        "cardType": "MINION",
+        "race": "DRAGON"
+      }
+    }
+  },
+  "collectible": true,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

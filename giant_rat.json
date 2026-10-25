@@ -1,0 +1,15 @@
+{
+  "id": "minion_giant_rat",
+  "name": "Giant Rat",
+  "baseManaCost": 3,
+  "type": "MINION",
+  "baseAttack": 2,
+  "baseHp": 3,
+  "heroClass": "ANY",
+  "rarity": "COMMON",
+  "race": "BEAST",
+  "description": "",
+  "collectible": true,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

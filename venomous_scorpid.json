@@ -1,0 +1,33 @@
+{
+  "id": "minion_venomous_scorpid",
+  "name": "Venomous Scorpid",
+  "baseManaCost": 3,
+  "type": "MINION",
+  "baseAttack": 1,
+  "baseHp": 3,
+  "heroClass": "ANY",
+  "rarity": "COMMON",
+  "race": "BEAST",
+  "description": "Poisonous. Battlecry: Discover a spell.",
+  "battlecry": {
+    "targetSelection": "NONE",
+    "spell": {
+      "class": "DiscoverRandomCardSpell",
+      "spell": {
+        "class": "ReceiveCardSpell",
+        "targetPlayer": "SELF"
+      },
+      "cardFilter": {
+        "class": "CardFilter",
+        "cardType": "SPELL"
+      }
+    }
+  },
+  "attributes": {
+    "BATTLECRY": true,
+    "POISONOUS": true
+  },
+  "collectible": true,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

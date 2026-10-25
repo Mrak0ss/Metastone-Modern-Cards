@@ -1,0 +1,27 @@
+{
+  "id": "minion_crazed_wretch",
+  "name": "Crazed Wretch",
+  "baseManaCost": 2,
+  "type": "MINION",
+  "baseAttack": 1,
+  "baseHp": 4,
+  "heroClass": "WARRIOR",
+  "rarity": "COMMON",
+  "description": "Enrage: +2 Attack",
+  "trigger": {
+    "eventTrigger": {
+      "class": "EnrageChangedTrigger"
+    },
+    "spell": {
+      "class": "EnrageSpell",
+      "target": "SELF",
+      "attackBonus": 2
+    }
+  },
+  "attributes": {
+    "ENRAGABLE": true
+  },
+  "collectible": true,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

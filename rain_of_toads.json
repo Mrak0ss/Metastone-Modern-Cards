@@ -1,0 +1,25 @@
+{
+	"id": "spell_rain_of_toads",
+	"name": "Rain of Toads",
+	"baseManaCost": 6,
+	"type": "SPELL",
+	"heroClass": "SHAMAN",
+	"rarity": "COMMON",
+	"description": "Summon three 2/2 Taunt Toads. Overload: (3)",
+	"targetSelection": "NONE",
+	"spell": {
+		"class": "SummonSpell",
+		"targetPlayer": "SELF",
+		"cards": [
+			"token_frog",
+			"token_frog",
+			"token_frog"
+		]
+	},
+	"attributes": {
+		"OVERLOAD": 3
+	},
+	"collectible": true,
+	"set": "CUSTOM",
+	"fileFormatVersion": 1
+}
