@@ -1,0 +1,27 @@
+{
+	"id": "spell_martyrs_buckler",
+	"name": "Martyr's Buckler",
+	"baseManaCost": 2,
+	"type": "SPELL",
+	"heroClass": "PALADIN",
+	"rarity": "RARE",
+	"description": "Give a minion Divine Shield and \"Deathrattle: Add Martyr's Buckler to your Hand.\"",
+	"targetSelection": "MINIONS",
+	"spell": {
+		"class": "MetaSpell",
+		"spell1": {
+			"class": "AddAttributeSpell",
+			"attribute": "DIVINE_SHIELD"
+		},
+		"spell2": {
+			"class": "AddDeathrattleSpell",
+			"spell1": {
+				"class": "ReceiveCardSpell",
+				"card": "spell_martyrs_buckler"
+			}
+		}
+	},
+	"collectible": true,
+	"set": "CUSTOM",
+	"fileFormatVersion": 1
+}
