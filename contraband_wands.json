@@ -1,0 +1,20 @@
+{
+  "name": "Contraband Wands",
+  "baseManaCost": 2,
+  "type": "SPELL",
+  "heroClass": "MAGE",
+  "rarity": "COMMON",
+  "description": "Get 3 Arcane Missiles.",
+  "targetSelection": "NONE",
+  "spell": {
+    "class": "ReceiveCardSpell",
+    "cards": [
+      "spell_arcane_missiles",
+      "spell_arcane_missiles",
+      "spell_arcane_missiles"
+    ]
+  },
+  "collectible": true,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

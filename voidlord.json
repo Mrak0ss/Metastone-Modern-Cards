@@ -1,0 +1,26 @@
+{
+  "name": "Voidlord",
+  "baseManaCost": 6,
+  "type": "MINION",
+  "baseAttack": 3,
+  "baseHp": 9,
+  "heroClass": "ANY",
+  "rarity": "COMMON",
+  "race": "DEMON",
+  "description": "Taunt. Deathrattle: Summon three 1/3 Demons with Taunt.",
+  "deathrattle": {
+    "class": "SummonSpell",
+    "cards": [
+      "minion_voidwalker",
+      "minion_voidwalker",
+      "minion_voidwalker"
+    ]
+  },
+  "attributes": {
+    "TAUNT": true,
+    "DEATHRATTLES": true
+  },
+  "collectible": true,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

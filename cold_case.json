@@ -1,0 +1,28 @@
+{
+  "name": "Cold Case",
+  "baseManaCost": 4,
+  "type": "SPELL",
+  "heroClass": "MAGE",
+  "rarity": "COMMON",
+  "description": "Summon two 2/2 Volatile Skeletons. Gain 4 Armor.",
+  "targetSelection": "NONE",
+  "spell": {
+    "class": "MetaSpell",
+    "spells": [
+      {
+        "class": "SummonSpell",
+        "cards": [
+          "token_volatile_skeleton",
+          "token_volatile_skeleton"
+        ]
+      },
+      {
+        "class": "BuffHeroSpell",
+        "armorBonus": 4
+      }
+    ]
+  },
+  "collectible": true,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

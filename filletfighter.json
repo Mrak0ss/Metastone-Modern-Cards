@@ -1,0 +1,24 @@
+{
+  "name": "Filletfighter",
+  "baseManaCost": 1,
+  "type": "MINION",
+  "baseAttack": 3,
+  "baseHp": 1,
+  "heroClass": "ROGUE",
+  "rarity": "COMMON",
+  "race": "PIRATE",
+  "description": "Battlecry: Deal 1 damage.",
+  "battlecry": {
+    "targetSelection": "ANY",
+    "spell": {
+      "class": "DamageSpell",
+      "value": 1
+    }
+  },
+  "attributes": {
+    "BATTLECRY": true
+  },
+  "collectible": true,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

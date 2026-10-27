@@ -7,7 +7,7 @@
   "baseHp": 2,
   "heroClass": "ANY",
   "rarity": "LEGENDARY",
-  "race": "MECHANICAL",
+  "race": "MECH",
   "description": "Divine Shield. Taunt. Lifesteal. Rush.",
   "attributes": {
     "CHARGE": true,

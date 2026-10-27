@@ -1,0 +1,17 @@
+{
+  "name": "Fire Sale",
+  "baseManaCost": 4,
+  "type": "SPELL",
+  "heroClass": "MAGE",
+  "rarity": "COMMON",
+  "description": "Deal 3 damage to all minions.",
+  "targetSelection": "NONE",
+  "spell": {
+    "class": "DamageSpell",
+    "target": "ALL_MINIONS",
+    "value": 3
+  },
+  "collectible": true,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

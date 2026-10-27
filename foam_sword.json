@@ -1,0 +1,13 @@
+{
+  "name": "Foam Sword",
+  "baseManaCost": 1,
+  "type": "WEAPON",
+  "damage": 2,
+  "durability": 2,
+  "heroClass": "ANY",
+  "rarity": "COMMON",
+  "description": "",
+  "collectible": true,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

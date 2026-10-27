@@ -1,0 +1,25 @@
+{
+  "name": "Ring Matron",
+  "baseManaCost": 6,
+  "type": "MINION",
+  "baseAttack": 6,
+  "baseHp": 4,
+  "heroClass": "WARLOCK",
+  "rarity": "COMMON",
+  "race": "DEMON",
+  "description": "Taunt. Deathrattle: Summon two 3/2 Imps.",
+  "deathrattle": {
+    "class": "SummonSpell",
+    "cards": [
+      "token_fiery_imp",
+      "token_fiery_imp"
+    ]
+  },
+  "attributes": {
+    "TAUNT": true,
+    "DEATHRATTLES": true
+  },
+  "collectible": true,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

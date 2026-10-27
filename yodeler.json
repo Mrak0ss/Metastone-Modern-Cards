@@ -1,0 +1,40 @@
+{
+  "name": "Yelling Yodeler",
+  "baseManaCost": 4,
+  "type": "MINION",
+  "baseAttack": 3,
+  "baseHp": 4,
+  "heroClass": "HUNTER",
+  "rarity": "RARE",
+  "description": "Battlecry: Trigger a friendly minion's Deathrattle twice.",
+  "battlecry": {
+    "targetSelection": "FRIENDLY_MINIONS",
+    "spell": {
+      "class": "MetaSpell",
+      "spells": [
+        {
+          "class": "TriggerDeathrattleSpell",
+          "filter": {
+            "class": "AttributeFilter",
+            "attribute": "DEATHRATTLES",
+            "operation": "HAS"
+          }
+        },
+        {
+          "class": "TriggerDeathrattleSpell",
+          "filter": {
+            "class": "AttributeFilter",
+            "attribute": "DEATHRATTLES",
+            "operation": "HAS"
+          }
+        }
+      ]
+    }
+  },
+  "attributes": {
+    "BATTLECRY": true
+  },
+  "collectible": true,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}
