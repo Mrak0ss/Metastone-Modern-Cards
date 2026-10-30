@@ -1,0 +1,27 @@
+{
+  "name": "Bwonsamdi's Keeper",
+  "baseManaCost": 4,
+  "type": "MINION",
+  "baseAttack": 4,
+  "baseHp": 5,
+  "heroClass": "PRIEST",
+  "rarity": "FREE",
+  "description": "Battlecry: Restore all minions to full Health.",
+  "battlecry": {
+    "targetSelection": "NONE",
+    "spell": {
+      "class": "HealSpell",
+      "target": "ALL_MINIONS",
+      "value": {
+        "class": "AttributeValueProvider",
+        "attribute": "MAX_HP"
+      }
+    }
+  },
+  "attributes": {
+    "BATTLECRY": true
+  },
+  "collectible": true,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

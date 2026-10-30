@@ -1,0 +1,26 @@
+{
+  "name": "Overflow",
+  "baseManaCost": 7,
+  "type": "SPELL",
+  "heroClass": "DRUID",
+  "rarity": "RARE",
+  "description": "Restore 5 Health to all characters. Draw 5 cards.",
+  "targetSelection": "NONE",
+  "spell": {
+    "class": "MetaSpell",
+    "spells": [
+      {
+        "class": "HealSpell",
+        "target": "ALL_CHARACTERS",
+        "value": 5
+      },
+      {
+        "class": "DrawCardSpell",
+        "value": 5
+      }
+    ]
+  },
+  "collectible": true,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

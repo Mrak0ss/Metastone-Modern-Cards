@@ -1,0 +1,28 @@
+{
+  "name": "High Priest Amet",
+  "baseManaCost": 4,
+  "type": "MINION",
+  "baseAttack": 2,
+  "baseHp": 7,
+  "heroClass": "PRIEST",
+  "rarity": "LEGENDARY",
+  "description": "Whenever you summon a minion, set its Health equal to this minion's.",
+  "trigger": {
+    "eventTrigger": {
+      "class": "MinionSummonedTrigger",
+      "targetPlayer": "BOTH"
+    },
+    "spell": {
+      "class": "SetHpSpell",
+      "target": "EVENT_TARGET",
+      "value": {
+        "class": "AttributeValueProvider",
+        "target": "SELF",
+        "attribute": "HP"
+      }
+    }
+  },
+  "collectible": true,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}
