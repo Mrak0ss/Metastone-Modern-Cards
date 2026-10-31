@@ -1,0 +1,30 @@
+{
+  "name": "Lord Barov",
+  "baseManaCost": 3,
+  "type": "MINION",
+  "baseAttack": 3,
+  "baseHp": 2,
+  "heroClass": "WARRIOR",
+  "rarity": "LEGENDARY",
+  "description": "Battlecry: Set the Health of all other minions to 1. Deathrattle: Deal 1 damage to all minions.",
+  "battlecry": {
+    "targetSelection": "NONE",
+    "spell": {
+      "class": "SetHpSpell",
+      "target": "ALL_OTHER_MINIONS",
+      "value": 1
+    }
+  },
+  "deathrattle": {
+    "class": "DamageSpell",
+    "target": "ALL_MINIONS",
+    "value": 1
+  },
+  "attributes": {
+    "BATTLECRY": true,
+    "DEATHRATTLES": true
+  },
+  "collectible": true,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

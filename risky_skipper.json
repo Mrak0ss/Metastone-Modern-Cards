@@ -1,0 +1,25 @@
+{
+  "name": "Risky Skipper",
+  "baseManaCost": 1,
+  "type": "MINION",
+  "baseAttack": 1,
+  "baseHp": 3,
+  "heroClass": "WARRIOR",
+  "rarity": "RARE",
+  "race": "PIRATE",
+  "description": "After you play a minion, deal 1 damage to all minions.",
+  "trigger": {
+    "eventTrigger": {
+      "class": "MinionPlayedTrigger",
+      "targetPlayer": "SELF"
+    },
+    "spell": {
+      "class": "DamageSpell",
+      "target": "ALL_MINIONS",
+      "value": 1
+    }
+  },
+  "collectible": true,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}
