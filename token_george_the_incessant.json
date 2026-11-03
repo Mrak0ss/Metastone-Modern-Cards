@@ -1,0 +1,19 @@
+{
+	"name": "George, the Incessant",
+	"baseManaCost": 4,
+	"type": "MINION",
+	"baseAttack": 3,
+	"baseHp": 4,
+	"heroClass": "PALADIN",
+	"rarity": "FREE",
+	"description": "Rush. Divine Shield.",
+	"attributes": {
+		"DIVINE_SHIELD": true,
+		"CHARGE": true,
+		"CANNOT_ATTACK_HEROES": true,
+		"CANNOT_ATTACK_HERO_ON_SUMMON": true
+	},
+	"collectible": false,
+	"set": "CUSTOM",
+	"fileFormatVersion": 1
+}

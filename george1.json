@@ -1,0 +1,23 @@
+{
+	"name": "George, the Incessant",
+	"baseManaCost": 4,
+	"type": "MINION",
+	"baseAttack": 3,
+	"baseHp": 4,
+	"heroClass": "PALADIN",
+	"rarity": "LEGENDARY",
+	"description": "Rush. Divine Shield. Deathrattle: Summon a copy of this minion.",
+	"deathrattle": {
+		"class": "SummonSpell",
+		"card": "token_george_the_incessant"
+	},
+	"attributes": {
+		"DIVINE_SHIELD": true,
+		"CHARGE": true,
+		"CANNOT_ATTACK_HEROES": true,
+		"CANNOT_ATTACK_HERO_ON_SUMMON": true
+	},
+	"collectible": true,
+	"set": "CUSTOM",
+	"fileFormatVersion": 1
+}
