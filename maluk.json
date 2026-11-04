@@ -1,0 +1,36 @@
+{
+	"name": "King Maluk",
+	"baseManaCost": 4,
+	"type": "MINION",
+	"baseAttack": 5,
+	"baseHp": 6,
+	"heroClass": "HUNTER",
+	"rarity": "LEGENDARY",
+	"race": "BEAST",
+	"description": "Battlecry: Discard your hand. Get an Infinite Banana.",
+	"battlecry": {
+		"targetSelection": "NONE",
+		"spell": {
+			"class": "MetaSpell",
+			"spells": [
+				{
+					"class": "DiscardSpell",
+					"value": -1
+				},
+				{
+					"class": "ReceiveCardSpell",
+					"cards": [
+						"spell_infinite_banana"
+					],
+					"targetPlayer": "SELF"
+				}
+			]
+		}
+	},
+	"attributes": {
+		"BATTLECRY": true
+	},
+	"collectible": true,
+	"set": "CUSTOM",
+	"fileFormatVersion": 1
+}

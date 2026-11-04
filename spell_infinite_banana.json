@@ -1,0 +1,30 @@
+{
+	"name": "Infinite Banana",
+	"baseManaCost": 1,
+	"type": "SPELL",
+	"heroClass": "HUNTER",
+	"rarity": "FREE",
+	"description": "Give a minion +1/+1. Add a copy of this to your hand.",
+	"targetSelection": "MINIONS",
+	"spell": {
+		"class": "MetaSpell",
+		"spells": [
+			{
+				"class": "BuffSpell",
+				"target": "TARGET",
+				"attackBonus": 1,
+				"hpBonus": 1
+			},
+			{
+				"class": "ReceiveCardSpell",
+				"cards": [
+					"spell_infinite_banana"
+				],
+				"targetPlayer": "SELF"
+			}
+		]
+	},
+	"collectible": false,
+	"set": "CUSTOM",
+	"fileFormatVersion": 1
+}

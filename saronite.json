@@ -1,0 +1,24 @@
+{
+	"name": "Saronite Chain Gang",
+	"baseManaCost": 4,
+	"type": "MINION",
+	"baseAttack": 2,
+	"baseHp": 3,
+	"heroClass": "ANY",
+	"rarity": "RARE",
+	"description": "Taunt. Battlecry: Summon another Saronite Chain Gang.",
+	"battlecry": {
+		"targetSelection": "NONE",
+		"spell": {
+			"class": "SummonSpell",
+			"card": "token_saronite_chain_gang"
+		}
+	},
+	"attributes": {
+		"TAUNT": true,
+		"BATTLECRY": true
+	},
+	"collectible": true,
+	"set": "CUSTOM",
+	"fileFormatVersion": 1
+}

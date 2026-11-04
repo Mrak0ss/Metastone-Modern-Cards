@@ -1,0 +1,25 @@
+{
+	"name": "Platysaur",
+	"baseManaCost": 1,
+	"type": "MINION",
+	"baseAttack": 1,
+	"baseHp": 2,
+	"heroClass": "ANY",
+	"rarity": "COMMON",
+	"race": "BEAST",
+	"description": "Battlecry: Draw a card. Deathrattle: Discard a card.",
+	"battlecry": {
+		"targetSelection": "NONE",
+		"spell": {
+			"class": "DrawCardSpell",
+			"targetPlayer": "SELF"
+		}
+	},
+	"deathrattle": {
+		"class": "DiscardSpell",
+		"value": 1
+	},
+	"collectible": true,
+	"set": "CUSTOM",
+	"fileFormatVersion": 1
+}

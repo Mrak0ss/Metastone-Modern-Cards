@@ -1,0 +1,15 @@
+{
+    "name": "Wax Rager",
+    "baseManaCost": 3,
+    "type": "MINION",
+    "baseAttack": 5,
+    "baseHp": 1,
+    "heroClass": "ANY",
+    "rarity": "FREE",
+    "race": "ELEMENTAL",
+    "description": "",
+    "attributes": {},
+    "collectible": false,
+    "set": "CUSTOM",
+    "fileFormatVersion": 1
+}
