@@ -1,0 +1,38 @@
+{
+  "name": "Party Fiend",
+  "baseManaCost": 1,
+  "type": "MINION",
+  "baseAttack": 1,
+  "baseHp": 1,
+  "heroClass": "WARLOCK",
+  "rarity": "COMMON",
+  "race": "DEMON",
+  "description": "Battlecry: Summon two 1/1 Felbeasts. Deal 3 damage to your hero.",
+  "battlecry": {
+    "targetSelection": "NONE",
+    "spell": {
+      "class": "MetaSpell",
+      "spells": [
+        {
+          "class": "SummonSpell",
+          "card": "token_felbeast"
+        },
+        {
+          "class": "SummonSpell",
+          "card": "token_felbeast"
+        },
+        {
+          "class": "DamageSpell",
+          "target": "FRIENDLY_HERO",
+          "value": 3
+        }
+      ]
+    }
+  },
+  "attributes": {
+    "BATTLECRY": true
+  },
+  "collectible": true,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

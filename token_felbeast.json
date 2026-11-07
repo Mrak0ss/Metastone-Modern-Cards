@@ -1,0 +1,13 @@
+{
+  "name": "Felbeast",
+  "baseManaCost": 1,
+  "type": "MINION",
+  "baseAttack": 1,
+  "baseHp": 1,
+  "heroClass": "WARLOCK",
+  "rarity": "FREE",
+  "race": "DEMON",
+  "collectible": false,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

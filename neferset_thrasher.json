@@ -1,0 +1,28 @@
+{
+    "id": "minion_neferset_thrasher",
+    "name": "Neferset Thrasher",
+    "baseManaCost": 3,
+    "type": "MINION",
+    "baseAttack": 4,
+    "baseHp": 5,
+    "heroClass": "WARLOCK",
+    "rarity": "COMMON",
+    "description": "Whenever this attacks, deal 3 damage to your hero.",
+    "trigger": {
+        "eventTrigger": {
+            "class": "AfterPhysicalAttackTrigger",
+            "source": "SELF",
+            "target": "BOTH",
+            "sourceEntityType": "MINION"
+        },
+        "spell": {
+            "class": "DamageSpell",
+            "target": "FRIENDLY_HERO",
+            "value": 3
+        }
+    },
+    "attributes": {},
+    "collectible": true,
+    "set": "CUSTOM",
+    "fileFormatVersion": 1
+}

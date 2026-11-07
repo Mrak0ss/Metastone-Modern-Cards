@@ -1,0 +1,26 @@
+{
+  "name": "INFERNAL!",
+  "baseManaCost": 4,
+  "type": "MINION",
+  "baseAttack": 6,
+  "baseHp": 6,
+  "heroClass": "WARLOCK",
+  "rarity": "RARE",
+  "race": "DEMON",
+  "description": "Taunt. Battlecry: Set your hero's remaining Health to 15.",
+  "battlecry": {
+    "targetSelection": "NONE",
+    "spell": {
+      "class": "SetHeroHpSpell",
+      "target": "FRIENDLY_HERO",
+      "value": 15
+    }
+  },
+  "attributes": {
+    "TAUNT": true,
+    "BATTLECRY": true
+  },
+  "collectible": true,
+  "set": "WHIZBANGS_WORKSHOP",
+  "fileFormatVersion": 1
+}

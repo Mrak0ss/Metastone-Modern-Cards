@@ -1,0 +1,22 @@
+{
+	"name": "Death's Head Cultist",
+	"baseManaCost": 3,
+	"type": "MINION",
+	"baseAttack": 2,
+	"baseHp": 4,
+	"heroClass": "ANY",
+	"rarity": "COMMON",
+	"description": "Taunt. Deathrattle: Restore 4 Health to your hero.",
+	"deathrattle": {
+		"class": "HealSpell",
+		"target": "FRIENDLY_HERO",
+		"value": 4
+	},
+	"attributes": {
+		"TAUNT": true,
+		"DEATHRATTLE": true
+	},
+	"collectible": true,
+	"set": "CUSTOM",
+	"fileFormatVersion": 1
+}
