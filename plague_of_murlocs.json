@@ -1,0 +1,22 @@
+{
+	"name": "Plague of Murlocs",
+	"baseManaCost": 3,
+	"type": "SPELL",
+	"heroClass": "SHAMAN",
+	"rarity": "EPIC",
+	"description": "Transform all minions into random Murlocs.",
+	"targetSelection": "NONE",
+	"spell": {
+		"class": "TransformToRandomMinionSpell",
+		"target": "ALL_MINIONS",
+		"cardFilter": {
+			"class": "CardFilter",
+			"cardType": "MINION",
+			"race": "MURLOC"
+		}
+	},
+	"attributes": {},
+	"collectible": true,
+	"set": "CUSTOM",
+	"fileFormatVersion": 1
+}

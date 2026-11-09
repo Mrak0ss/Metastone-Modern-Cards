@@ -1,0 +1,25 @@
+{
+    "name": "Redscale Dragontamer",
+    "baseManaCost": 2,
+    "type": "MINION",
+    "baseAttack": 2,
+    "baseHp": 3,
+    "heroClass": "PALADIN",
+    "rarity": "COMMON",
+    "race": "MURLOC",
+    "description": "Deathrattle: Draw a Dragon.",
+    "deathrattle": {
+        "class": "FromDeckToHandSpell",
+        "value": 1,
+        "cardFilter": {
+            "class": "CardFilter",
+            "race": "DRAGON"
+        }
+    },
+    "attributes": {
+        "DEATHRATTLE": true
+    },
+    "collectible": true,
+    "set": "CUSTOM",
+    "fileFormatVersion": 1
+}

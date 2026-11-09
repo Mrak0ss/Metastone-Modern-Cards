@@ -1,0 +1,22 @@
+{
+	"name": "The Storm Bringer",
+	"baseManaCost": 6,
+	"type": "SPELL",
+	"heroClass": "SHAMAN",
+	"rarity": "LEGENDARY",
+	"description": "Transform your minions into random Legendary minions.",
+	"targetSelection": "NONE",
+	"spell": {
+		"class": "TransformToRandomMinionSpell",
+		"target": "FRIENDLY_MINIONS",
+		"cardFilter": {
+			"class": "CardFilter",
+			"cardType": "MINION",
+			"rarity": "LEGENDARY"
+		}
+	},
+	"attributes": {},
+	"collectible": true,
+	"set": "CUSTOM",
+	"fileFormatVersion": 1
+}

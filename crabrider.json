@@ -1,0 +1,20 @@
+{
+    "name": "Crabrider",
+    "baseManaCost": 2,
+    "type": "MINION",
+    "baseAttack": 1,
+    "baseHp": 4,
+    "heroClass": "ANY",
+    "rarity": "COMMON",
+    "race": "MURLOC",
+    "description": "Rush. Windfury.",
+    "attributes": {
+        "CHARGE": true,
+        "CANNOT_ATTACK_HEROES": true,
+        "CANNOT_ATTACK_HERO_ON_SUMMON": true,
+        "WINDFURY": true
+    },
+    "collectible": true,
+    "set": "CUSTOM",
+    "fileFormatVersion": 1
+}

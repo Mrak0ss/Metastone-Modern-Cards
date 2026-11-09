@@ -1,0 +1,33 @@
+{
+	"name": "Hench-Clan Hag",
+	"baseManaCost": 4,
+	"type": "MINION",
+	"baseAttack": 3,
+	"baseHp": 3,
+	"heroClass": "SHAMAN",
+	"rarity": "RARE",
+	"race": "MURLOC",
+	"description": "Battlecry: Summon two 1/1 Murloc Scouts.",
+	"battlecry": {
+		"targetSelection": "NONE",
+		"spell": {
+			"class": "MetaSpell",
+			"spells": [
+				{
+					"class": "SummonSpell",
+					"card": "token_murloc_scout"
+				},
+				{
+					"class": "SummonSpell",
+					"card": "token_murloc_scout"
+				}
+			]
+		}
+	},
+	"attributes": {
+		"BATTLECRY": true
+	},
+	"collectible": true,
+	"set": "CUSTOM",
+	"fileFormatVersion": 1
+}

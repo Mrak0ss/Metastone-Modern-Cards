@@ -1,0 +1,42 @@
+{
+    "name": "Animated Broomstick",
+    "baseManaCost": 1,
+    "type": "MINION",
+    "baseAttack": 1,
+    "baseHp": 1,
+    "heroClass": "ANY",
+    "rarity": "COMMON",
+    "description": "Rush. Battlecry: Give your minions Rush.",
+    "battlecry": {
+        "targetSelection": "NONE",
+        "spell": {
+            "class": "MetaSpell",
+            "spells": [
+                {
+                    "class": "AddAttributeSpell",
+                    "target": "FRIENDLY_MINIONS",
+                    "attribute": "CHARGE"
+                },
+                {
+                    "class": "AddAttributeSpell",
+                    "target": "FRIENDLY_MINIONS",
+                    "attribute": "CANNOT_ATTACK_HEROES"
+                },
+                {
+                    "class": "AddAttributeSpell",
+                    "target": "FRIENDLY_MINIONS",
+                    "attribute": "CANNOT_ATTACK_HERO_ON_SUMMON"
+                }
+            ]
+        }
+    },
+    "attributes": {
+        "CHARGE": true,
+        "CANNOT_ATTACK_HEROES": true,
+        "CANNOT_ATTACK_HERO_ON_SUMMON": true,
+        "BATTLECRY": true
+    },
+    "collectible": true,
+    "set": "CUSTOM",
+    "fileFormatVersion": 1
+}

@@ -1,0 +1,43 @@
+{
+    "name": "Hot Springer",
+    "baseManaCost": 5,
+    "type": "MINION",
+    "baseAttack": 5,
+    "baseHp": 4,
+    "heroClass": "ANY",
+    "rarity": "COMMON",
+    "race": "MURLOC",
+    "description": "Battlecry: Give all Murlocs in your hand and board +4 Health.",
+    "battlecry": {
+        "targetSelection": "NONE",
+        "spell": {
+            "class": "MetaSpell",
+            "spells": [
+                {
+                    "class": "BuffSpell",
+                    "target": "FRIENDLY_MINIONS",
+                    "hpBonus": 4,
+                    "filter": {
+                        "class": "CardFilter",
+                        "race": "MURLOC"
+                    }
+                },
+                {
+                    "class": "BuffSpell",
+                    "target": "FRIENDLY_HAND",
+                    "hpBonus": 4,
+                    "filter": {
+                        "class": "CardFilter",
+                        "race": "MURLOC"
+                    }
+                }
+            ]
+        }
+    },
+    "attributes": {
+        "BATTLECRY": true
+    },
+    "collectible": true,
+    "set": "CUSTOM",
+    "fileFormatVersion": 1
+}

@@ -1,0 +1,26 @@
+{
+    "name": "Hand of A'dal",
+    "baseManaCost": 2,
+    "type": "SPELL",
+    "heroClass": "PALADIN",
+    "rarity": "COMMON",
+    "description": "Give a minion +2/+1. Draw a card.",
+    "targetSelection": "MINIONS",
+    "spell": {
+        "class": "MetaSpell",
+        "spells": [
+            {
+                "class": "BuffSpell",
+                "target": "TARGET",
+                "attackBonus": 2,
+                "hpBonus": 1
+            },
+            {
+                "class": "DrawCardSpell",
+                "targetPlayer": "SELF"
+            }
+        ]
+    },
+    "collectible": true,
+    "set": "CUSTOM"
+}

@@ -1,0 +1,44 @@
+{
+    "name": "Salhet's Pride",
+    "baseManaCost": 3,
+    "type": "MINION",
+    "baseAttack": 3,
+    "baseHp": 1,
+    "heroClass": "PALADIN",
+    "rarity": "RARE",
+    "race": "BEAST",
+    "description": "Deathrattle: Draw two 1-Attack minions.",
+    "deathrattle": {
+        "class": "MetaSpell",
+        "spells": [
+            {
+                "class": "FromDeckToHandSpell",
+                "value": 1,
+                "cardFilter": {
+                    "class": "CardFilter",
+                    "cardType": "MINION",
+                    "attribute": "BASE_ATTACK",
+                    "operation": "EQUAL",
+                    "value": 1
+                }
+            },
+            {
+                "class": "FromDeckToHandSpell",
+                "value": 1,
+                "cardFilter": {
+                    "class": "CardFilter",
+                    "cardType": "MINION",
+                    "attribute": "BASE_ATTACK",
+                    "operation": "EQUAL",
+                    "value": 1
+                }
+            }
+        ]
+    },
+    "attributes": {
+        "DEATHRATTLE": true
+    },
+    "collectible": true,
+    "set": "CUSTOM",
+    "fileFormatVersion": 1
+}
