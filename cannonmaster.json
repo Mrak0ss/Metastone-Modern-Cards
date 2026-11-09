@@ -1,0 +1,25 @@
+{
+    "name": "Cannonmaster",
+    "baseManaCost": 1,
+    "type": "MINION",
+    "baseAttack": 3,
+    "baseHp": 1,
+    "heroClass": "WARRIOR",
+    "rarity": "COMMON",
+    "race": "PIRATE",
+    "description": "Battlecry: Get a 1/1 Cannoneer that deals 1 damage to a random enemy at the end of your turn.",
+    "battlecry": {
+        "targetSelection": "NONE",
+        "spell": {
+            "class": "ReceiveCardSpell",
+            "targetPlayer": "SELF",
+            "card": "cannoneer"
+        }
+    },
+    "attributes": {
+        "BATTLECRY": true
+    },
+    "collectible": true,
+    "set": "CUSTOM",
+    "fileFormatVersion": 1
+}

@@ -1,0 +1,30 @@
+{
+    "name": "Underlight Angling Rod",
+    "baseManaCost": 3,
+    "type": "WEAPON",
+    "damage": 3,
+    "durability": 2,
+    "heroClass": "PALADIN",
+    "rarity": "RARE",
+    "description": "After your Hero attacks, add a random Murloc to your hand.",
+    "trigger": {
+        "eventTrigger": {
+            "class": "AfterPhysicalAttackTrigger",
+            "sourcePlayer": "SELF",
+            "targetPlayer": "BOTH",
+            "sourceEntityType": "HERO"
+        },
+        "spell": {
+            "class": "ReceiveCardSpell",
+            "targetPlayer": "SELF",
+            "cardFilter": {
+                "class": "CardFilter",
+                "cardType": "MINION",
+                "race": "MURLOC"
+            }
+        }
+    },
+    "collectible": true,
+    "set": "CUSTOM",
+    "fileFormatVersion": 1
+}
