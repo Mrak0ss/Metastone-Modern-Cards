@@ -1,0 +1,25 @@
+{
+    "name": "Spark Engine",
+    "baseManaCost": 2,
+    "type": "MINION",
+    "baseAttack": 2,
+    "baseHp": 1,
+    "heroClass": "ANY",
+    "rarity": "RARE",
+    "race": "MECH",
+    "description": "Battlecry: Add a 1/1 Spark with Rush to your hand.",
+    "battlecry": {
+        "targetSelection": "NONE",
+        "spell": {
+            "class": "ReceiveCardSpell",
+            "targetPlayer": "SELF",
+            "card": "token_voltaic_burst_spark"
+        }
+    },
+    "attributes": {
+        "BATTLECRY": true
+    },
+    "collectible": true,
+    "set": "CUSTOM",
+    "fileFormatVersion": 1
+}

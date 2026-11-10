@@ -1,0 +1,34 @@
+{
+    "name": "Spark Drill",
+    "baseManaCost": 6,
+    "type": "MINION",
+    "baseAttack": 5,
+    "baseHp": 1,
+    "heroClass": "ANY",
+    "rarity": "RARE",
+    "race": "MECH",
+    "description": "Rush. Deathrattle: Add two 1/1 Sparks with Rush to your hand.",
+    "deathrattle": {
+        "class": "MetaSpell",
+        "spells": [
+            {
+                "class": "ReceiveCardSpell",
+                "targetPlayer": "SELF",
+                "card": "token_voltaic_burst_spark"
+            },
+            {
+                "class": "ReceiveCardSpell",
+                "targetPlayer": "SELF",
+                "card": "token_voltaic_burst_spark"
+            }
+        ]
+    },
+    "attributes": {
+        "CHARGE": true,
+        "CANNOT_ATTACK_HEROES": true,
+        "CANNOT_ATTACK_HERO_ON_SUMMON": true
+    },
+    "collectible": true,
+    "set": "CUSTOM",
+    "fileFormatVersion": 1
+}

@@ -1,0 +1,22 @@
+{
+    "name": "Voltaic Burst",
+    "baseManaCost": 1,
+    "type": "SPELL",
+    "heroClass": "SHAMAN",
+    "rarity": "RARE",
+    "description": "Summon two 1/1 Sparks with Rush. Overload: (1).",
+    "targetSelection": "NONE",
+    "spell": {
+        "class": "SummonSpell",
+        "cards": [
+            "token_voltaic_burst_spark",
+            "token_voltaic_burst_spark"
+        ]
+    },
+    "attributes": {
+        "OVERLOAD": 1
+    },
+    "collectible": true,
+    "set": "CUSTOM",
+    "fileFormatVersion": 1
+}

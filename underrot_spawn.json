@@ -1,0 +1,27 @@
+{
+    "name": "Underrot Spawn",
+    "baseManaCost": 3,
+    "type": "MINION",
+    "baseAttack": 2,
+    "baseHp": 2,
+    "heroClass": "ANY",
+    "rarity": "FREE",
+    "description": "Deathrattle: Summon a 0/2 Tentacle with Taunt. Give your minions +1 Attack.",
+    "deathrattle": {
+        "class": "MetaSpell",
+        "spells": [
+            {
+                "class": "SummonSpell",
+                "card": "token_aberrant_tentacle"
+            },
+            {
+                "class": "BuffSpell",
+                "target": "FRIENDLY_MINIONS",
+                "attackBonus": 1
+            }
+        ]
+    },
+    "collectible": true,
+    "set": "CUSTOM",
+    "fileFormatVersion": 1
+}

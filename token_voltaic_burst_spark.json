@@ -1,0 +1,19 @@
+{
+    "id": "token_voltaic_burst_spark",
+    "name": "Spark",
+    "baseManaCost": 1,
+    "type": "MINION",
+    "baseAttack": 1,
+    "baseHp": 1,
+    "heroClass": "ANY",
+    "rarity": "FREE",
+    "description": "Rush",
+    "attributes": {
+        "CHARGE": true,
+        "CANNOT_ATTACK_HEROES": true,
+        "CANNOT_ATTACK_HERO_ON_SUMMON": true
+    },
+    "collectible": false,
+    "set": "CUSTOM",
+    "fileFormatVersion": 1
+}
