@@ -1,0 +1,14 @@
+{
+    "id": "token_battlegrounds_piranha",
+    "name": "Piranha",
+    "baseManaCost": 1,
+    "type": "MINION",
+    "baseAttack": 3,
+    "baseHp": 1,
+    "heroClass": "ANY",
+    "rarity": "FREE",
+    "race": "BEAST",
+    "collectible": false,
+    "set": "CUSTOM",
+    "fileFormatVersion": 1
+}
