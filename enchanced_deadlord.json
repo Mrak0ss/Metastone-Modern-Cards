@@ -1,0 +1,22 @@
+{
+  "name": "Enhanced Dreadlord",
+  "baseManaCost": 8,
+  "type": "MINION",
+  "baseAttack": 5,
+  "baseHp": 7,
+  "heroClass": "WARLOCK",
+  "rarity": "RARE",
+  "race": "DEMON",
+  "description": "Taunt. Deathrattle: Summon a 5/5 Dreadlord with Lifesteal.",
+  "deathrattle": {
+    "class": "SummonSpell",
+    "card": "token_dreadlord"
+  },
+  "attributes": {
+    "TAUNT": true,
+    "DEATHRATTLES": true
+  },
+  "collectible": true,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

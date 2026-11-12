@@ -1,0 +1,19 @@
+{
+  "name": "Razorscale",
+  "baseManaCost": 3,
+  "type": "MINION",
+  "baseAttack": 2,
+  "baseHp": 4,
+  "heroClass": "ANY",
+  "rarity": "EPIC",
+  "race": "DRAGON",
+  "description": "Your cards can't cost less than (2).",
+  "cardCostModifier": {
+    "class": "CardCostModifier",
+    "operation": "MINIMUM",
+    "value": 2
+  },
+  "collectible": true,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

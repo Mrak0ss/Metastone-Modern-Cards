@@ -1,0 +1,35 @@
+{
+  "name": "Dreadbeard",
+  "baseManaCost": 5,
+  "type": "MINION",
+  "baseAttack": 4,
+  "baseHp": 4,
+  "heroClass": "ANY",
+  "rarity": "FREE",
+  "race": "DEMON",
+  "description": "At the end of your turn, deal 1 damage to your hero and get a Tavern Coin.",
+  "trigger": {
+    "eventTrigger": {
+      "class": "TurnEndTrigger"
+    },
+    "spell": {
+      "class": "MetaSpell",
+      "spells": [
+        {
+          "class": "DamageSpell",
+          "target": "FRIENDLY_HERO",
+          "value": 1
+        },
+        {
+          "class": "ReceiveCardSpell",
+          "targetPlayer": "SELF",
+          "card": "spell_the_coin"
+        }
+      ]
+    }
+  },
+  "attributes": {},
+  "collectible": false,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

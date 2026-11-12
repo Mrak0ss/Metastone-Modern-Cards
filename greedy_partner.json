@@ -1,0 +1,32 @@
+{
+  "name": "Greedy Partner",
+  "baseManaCost": 2,
+  "type": "MINION",
+  "baseAttack": 2,
+  "baseHp": 3,
+  "heroClass": "ANY",
+  "rarity": "COMMON",
+  "description": "Battlecry: If you're holding another 2-Cost card, get a Coin.",
+  "battlecry": {
+    "spell": {
+      "class": "ReceiveCardSpell",
+      "targetPlayer": "SELF",
+      "card": "spell_the_coin"
+    },
+    "condition": {
+      "class": "HoldsCardCondition",
+      "cardFilter": {
+        "class": "CardFilter",
+        "attribute": "BASE_MANA_COST",
+        "operation": "EQUAL",
+        "value": 2
+      }
+    }
+  },
+  "attributes": {
+    "BATTLECRY": true
+  },
+  "collectible": true,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}
