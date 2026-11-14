@@ -1,0 +1,21 @@
+{
+    "name": "High Inquisitor Whitemane",
+    "baseManaCost": 6,
+    "type": "MINION",
+    "baseAttack": 5,
+    "baseHp": 7,
+    "heroClass": "ANY",
+    "rarity": "LEGENDARY",
+    "description": "Battlecry: Summon all friendly minions that died this turn.",
+    "battlecry": {
+        "spell": {
+            "class": "custom.KelThuzadSpell"
+        }
+    },
+    "attributes": {
+        "BATTLECRY": true
+    },
+    "collectible": true,
+    "set": "CUSTOM",
+    "fileFormatVersion": 1
+}
