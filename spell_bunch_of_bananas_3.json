@@ -1,0 +1,16 @@
+{
+    "name": "Bunch of Bananas",
+    "baseManaCost": 1,
+    "type": "SPELL",
+    "heroClass": "HUNTER",
+    "rarity": "FREE",
+    "description": "Give a minion +1/+1. (Last Banana!)",
+    "targetSelection": "MINIONS",
+    "spell": {
+        "class": "BuffSpell",
+        "value": 1
+    },
+    "collectible": false,
+    "set": "CUSTOM",
+    "fileFormatVersion": 1
+}

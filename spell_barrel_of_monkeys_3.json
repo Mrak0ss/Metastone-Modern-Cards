@@ -1,0 +1,16 @@
+{
+    "name": "Barrel of Monkeys",
+    "baseManaCost": 2,
+    "type": "SPELL",
+    "heroClass": "HUNTER",
+    "rarity": "FREE",
+    "description": "Summon a 1/4 Monkey with Taunt. (Last Monkey!)",
+    "targetSelection": "NONE",
+    "spell": {
+        "class": "SummonSpell",
+        "card": "token_monkey"
+    },
+    "collectible": false,
+    "set": "CUSTOM",
+    "fileFormatVersion": 1
+}

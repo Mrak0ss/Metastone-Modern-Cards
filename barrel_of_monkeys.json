@@ -1,0 +1,26 @@
+{
+    "name": "Barrel of Monkeys",
+    "baseManaCost": 2,
+    "type": "SPELL",
+    "heroClass": "HUNTER",
+    "rarity": "RARE",
+    "description": "Summon a 1/4 Monkey with Taunt. (3 Monkeys left!)",
+    "targetSelection": "NONE",
+    "spell": {
+        "class": "MetaSpell",
+        "spells": [
+            {
+                "class": "SummonSpell",
+                "card": "token_monkey"
+            },
+            {
+                "class": "ReceiveCardSpell",
+                "targetPlayer": "SELF",
+                "card": "spell_barrel_of_monkeys_2"
+            }
+        ]
+    },
+    "collectible": true,
+    "set": "CUSTOM",
+    "fileFormatVersion": 1
+}

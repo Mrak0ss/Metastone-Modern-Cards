@@ -1,0 +1,30 @@
+{
+    "name": "Trinket Tracker",
+    "baseManaCost": 1,
+    "type": "MINION",
+    "baseAttack": 1,
+    "baseHp": 1,
+    "heroClass": "HUNTER",
+    "rarity": "COMMON",
+    "description": "Battlecry: Draw a 1-Cost spell.",
+    "battlecry": {
+        "targetSelection": "NONE",
+        "spell": {
+            "class": "FromDeckToHandSpell",
+            "value": 1,
+            "cardFilter": {
+                "class": "CardFilter",
+                "cardType": "SPELL",
+                "attribute": "BASE_MANA_COST",
+                "operation": "EQUAL",
+                "value": 1
+            }
+        }
+    },
+    "attributes": {
+        "BATTLECRY": true
+    },
+    "collectible": true,
+    "set": "CUSTOM",
+    "fileFormatVersion": 1
+}

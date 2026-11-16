@@ -1,0 +1,52 @@
+{
+    "name": "Hollow Hound",
+    "baseManaCost": 6,
+    "type": "MINION",
+    "baseAttack": 3,
+    "baseHp": 4,
+    "heroClass": "HUNTER",
+    "rarity": "COMMON",
+    "description": "Lifesteal. Rush. Also damages the minions next to whomever this attacks.",
+    "race": "BEAST",
+    "attributes": {
+        "CHARGE": true,
+        "CANNOT_ATTACK_HERO_ON_SUMMON": true
+    },
+    "trigger": {
+        "eventTrigger": {
+            "class": "AfterPhysicalAttackTrigger",
+            "sourcePlayer": "SELF",
+            "targetEntityType": "MINION",
+            "hostTargetType": "IGNORE_OTHER_SOURCES"
+        },
+        "spell": {
+            "class": "MetaSpell",
+            "spells": [
+                {
+                    "class": "AdjacentEffectSpell",
+                    "target": "EVENT_TARGET",
+                    "spell2": {
+                        "class": "DamageSpell",
+                        "value": {
+                            "class": "AttributeValueProvider",
+                            "target": "SELF",
+                            "attribute": "ATTACK"
+                        }
+                    }
+                },
+                {
+                    "class": "HealSpell",
+                    "target": "FRIENDLY_HERO",
+                    "value": {
+                        "class": "AttributeValueProvider",
+                        "target": "EVENT_TARGET",
+                        "attribute": "LAST_HIT"
+                    }
+                }
+            ]
+        }
+    },
+    "collectible": true,
+    "set": "CUSTOM",
+    "fileFormatVersion": 1
+}
