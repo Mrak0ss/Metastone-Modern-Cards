@@ -1,0 +1,25 @@
+{
+    "id": "spell_will_of_the_wisps",
+    "name": "Will of the Wisps",
+    "baseManaCost": 4,
+    "type": "SPELL",
+    "heroClass": "DRUID",
+    "rarity": "FREE",
+    "description": "Fill your board with 1/1 Wisps.",
+    "targetSelection": "NONE",
+    "spell": {
+        "class": "SummonSpell",
+        "cards": [
+            "minion_wisp",
+            "minion_wisp",
+            "minion_wisp",
+            "minion_wisp",
+            "minion_wisp",
+            "minion_wisp",
+            "minion_wisp"
+        ]
+    },
+    "collectible": false,
+    "set": "CUSTOM",
+    "fileFormatVersion": 1
+}
