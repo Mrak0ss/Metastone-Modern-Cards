@@ -1,0 +1,26 @@
+{
+    "id": "spell_blood_in_the_water",
+    "name": "Blood in the Water",
+    "baseManaCost": 6,
+    "type": "SPELL",
+    "heroClass": "ROGUE",
+    "rarity": "COMMON",
+    "description": "Deal 3 damage to an enemy. Summon a 5/5 Shark with Rush.",
+    "targetSelection": "ENEMY_CHARACTERS",
+    "spell": {
+        "class": "MetaSpell",
+        "spells": [
+            {
+                "class": "DamageSpell",
+                "value": 3
+            },
+            {
+                "class": "SummonSpell",
+                "card": "token_shark"
+            }
+        ]
+    },
+    "collectible": true,
+    "set": "CUSTOM",
+    "fileFormatVersion": 1
+}

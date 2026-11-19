@@ -1,0 +1,28 @@
+{
+    "id": "minion_pufferfist",
+    "name": "Pufferfist",
+    "baseManaCost": 3,
+    "type": "MINION",
+    "baseAttack": 3,
+    "baseHp": 3,
+    "heroClass": "NEUTRAL",
+    "rarity": "COMMON",
+    "race": "PIRATE",
+    "description": "After your hero attacks, deal 1 damage to all enemies.",
+    "trigger": {
+        "eventTrigger": {
+            "class": "AfterPhysicalAttackTrigger",
+            "sourcePlayer": "SELF",
+            "targetPlayer": "BOTH",
+            "sourceEntityType": "HERO"
+        },
+        "spell": {
+            "class": "DamageSpell",
+            "target": "ENEMY_CHARACTERS",
+            "value": 1
+        }
+    },
+    "collectible": true,
+    "set": "CUSTOM",
+    "fileFormatVersion": 1
+}

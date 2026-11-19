@@ -1,0 +1,19 @@
+{
+    "id": "token_shark",
+    "name": "Shark",
+    "baseManaCost": 0,
+    "type": "MINION",
+    "baseAttack": 5,
+    "baseHp": 5,
+    "heroClass": "ANY",
+    "rarity": "FREE",
+    "race": "BEAST",
+    "description": "",
+    "attributes": {
+        "CHARGE": true,
+        "CANNOT_ATTACK_HERO_ON_SUMMON": true
+    },
+    "collectible": false,
+    "set": "CUSTOM",
+    "fileFormatVersion": 1
+}

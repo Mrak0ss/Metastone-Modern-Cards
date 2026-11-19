@@ -1,0 +1,31 @@
+{
+    "id": "minion_cutlass_courier",
+    "name": "Cutlass Courier",
+    "baseManaCost": 3,
+    "type": "MINION",
+    "baseAttack": 2,
+    "baseHp": 5,
+    "heroClass": "ROGUE",
+    "rarity": "COMMON",
+    "race": "PIRATE",
+    "description": "After your hero attacks, draw a Pirate.",
+    "trigger": {
+        "eventTrigger": {
+            "class": "AfterPhysicalAttackTrigger",
+            "sourcePlayer": "SELF",
+            "targetPlayer": "BOTH",
+            "sourceEntityType": "HERO"
+        },
+        "spell": {
+            "class": "FromDeckToHandSpell",
+            "value": 1,
+            "cardFilter": {
+                "class": "CardFilter",
+                "race": "PIRATE"
+            }
+        }
+    },
+    "collectible": true,
+    "set": "CUSTOM",
+    "fileFormatVersion": 1
+}
