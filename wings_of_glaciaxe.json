@@ -1,0 +1,26 @@
+{
+  "id": "token_wings_of_glaciaxe",
+  "name": "Wings of Glaciaxe",
+  "baseManaCost": 4,
+  "type": "MINION",
+  "baseAttack": 2,
+  "baseHp": 3,
+  "heroClass": "WARRIOR",
+  "rarity": "FREE",
+  "description": "Windfury. Deathrattle: Summon three 1/1 Shambling Squires with Reborn.",
+  "deathrattle": {
+    "class": "SummonSpell",
+    "cards": [
+      "token_shambling_squire",
+      "token_shambling_squire",
+      "token_shambling_squire"
+    ]
+  },
+  "attributes": {
+    "WINDFURY": true,
+    "DEATHRATTLES": true
+  },
+  "collectible": false,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

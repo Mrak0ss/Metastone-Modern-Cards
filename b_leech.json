@@ -1,0 +1,37 @@
+{
+  "id": "minion_bloated_leech",
+  "name": "Bloated Leech",
+  "baseManaCost": 1,
+  "type": "MINION",
+  "baseAttack": 0,
+  "baseHp": 2,
+  "heroClass": "WARLOCK",
+  "rarity": "FREE",
+  "race": "BEAST",
+  "description": "At the end of your turn, your hero steals 1 Health from the lowest Health enemy.",
+  "trigger": {
+    "eventTrigger": {
+      "class": "TurnEndTrigger",
+      "targetPlayer": "SELF"
+    },
+    "spell": {
+      "class": "MetaSpell",
+      "spells": [
+        {
+          "class": "DamageSpell",
+          "target": "ENEMY_HERO",
+          "value": 1
+        },
+        {
+          "class": "HealSpell",
+          "target": "FRIENDLY_HERO",
+          "value": 1
+        }
+      ]
+    }
+  },
+  "attributes": {},
+  "collectible": true,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

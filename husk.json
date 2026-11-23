@@ -1,0 +1,28 @@
+{
+  "id": "minion_hideous_husk",
+  "name": "Hideous Husk",
+  "baseManaCost": 6,
+  "type": "MINION",
+  "baseAttack": 3,
+  "baseHp": 5,
+  "heroClass": "WARLOCK",
+  "rarity": "EPIC",
+  "race": "BEAST",
+  "description": "Battlecry: Summon two 0/2 upgraded Leeches.",
+  "battlecry": {
+    "targetSelection": "NONE",
+    "spell": {
+      "class": "SummonSpell",
+      "cards": [
+        "token_hideous_leech",
+        "token_hideous_leech"
+      ]
+    }
+  },
+  "attributes": {
+    "BATTLECRY": true
+  },
+  "collectible": true,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

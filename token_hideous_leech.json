@@ -1,0 +1,37 @@
+{
+  "id": "token_hideous_leech",
+  "name": "Bloated Leech",
+  "baseManaCost": 1,
+  "type": "MINION",
+  "baseAttack": 0,
+  "baseHp": 2,
+  "heroClass": "WARRIOR",
+  "rarity": "FREE",
+  "race": "BEAST",
+  "description": "At the end of your turn, deal 2 damage to the enemy hero and restore 2 Health to your hero.",
+  "trigger": {
+    "eventTrigger": {
+      "class": "TurnEndTrigger",
+      "targetPlayer": "SELF"
+    },
+    "spell": {
+      "class": "MetaSpell",
+      "spells": [
+        {
+          "class": "DamageSpell",
+          "target": "ENEMY_HERO",
+          "value": 2
+        },
+        {
+          "class": "HealSpell",
+          "target": "FRIENDLY_HERO",
+          "value": 2
+        }
+      ]
+    }
+  },
+  "attributes": {},
+  "collectible": false,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

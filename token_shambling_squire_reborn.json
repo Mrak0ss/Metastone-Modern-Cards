@@ -1,0 +1,14 @@
+{
+  "id": "token_shambling_squire_reborn",
+  "name": "Shambling Squire",
+  "baseManaCost": 1,
+  "type": "MINION",
+  "baseAttack": 1,
+  "baseHp": 1,
+  "heroClass": "WARRIOR",
+  "rarity": "FREE",
+  "description": "",
+  "collectible": false,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

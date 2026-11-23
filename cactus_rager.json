@@ -1,0 +1,26 @@
+
+{
+  "id": "minion_cactus_rager",
+  "name": "Cactus Rager",
+  "baseManaCost": 2,
+  "type": "MINION",
+  "baseAttack": 5,
+  "baseHp": 1,
+  "heroClass": "ANY",
+  "rarity": "COMMON",
+  "race": "NONE",
+  "description": "Poisonous.",
+  "trigger": {
+    "eventTrigger": {
+      "class": "DamageCausedTrigger",
+      "hostTargetType": "IGNORE_OTHER_SOURCES"
+    },
+    "spell": {
+      "class": "DestroySpell",
+      "target": "EVENT_TARGET"
+    }
+  },
+  "collectible": true,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

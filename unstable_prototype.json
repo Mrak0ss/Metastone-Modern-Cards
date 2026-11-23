@@ -7,21 +7,29 @@
   "baseHp": 1,
   "heroClass": "ANY",
   "rarity": "COMMON",
-  "description": "Deathrattle: Give all minions in your hand +2/+2.",
+  "description": "Deathrattle: Give all minions in your hand +1 Attack. Reborn.",
   "race": "MECH",
   "deathrattle": {
-    "class": "BuffSpell",
-    "target": "FRIENDLY_HAND",
-    "attackBonus": 2,
-    "hpBonus": 2,
-    "filter": {
-      "class": "CardFilter",
-      "cardType": "MINION"
-    }
+    "class": "MetaSpell",
+    "spells": [
+      {
+        "class": "BuffSpell",
+        "target": "FRIENDLY_HAND",
+        "attackBonus": 1,
+        "hpBonus": 0,
+        "filter": {
+          "class": "CardFilter",
+          "cardType": "MINION"
+        }
+      },
+      {
+        "class": "SummonSpell",
+        "card": "token_unstable_prototype_reborn"
+      }
+    ]
   },
   "attributes": {
-    "DEATHRATTLES": true,
-    "REBORN": true
+    "DEATHRATTLES": true
   },
   "collectible": true,
   "set": "CUSTOM",
