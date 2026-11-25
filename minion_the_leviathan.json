@@ -1,0 +1,28 @@
+{
+  "id": "minion_the_leviathan",
+  "name": "The Leviathan",
+  "baseManaCost": 7,
+  "type": "MINION",
+  "baseAttack": 4,
+  "baseHp": 5,
+  "heroClass": "PALADIN",
+  "rarity": "LEGENDARY",
+  "race": "MECH",
+  "description": "Colossal +1. Rush, Divine Shield.",
+  "battlecry": {
+    "targetSelection": "NONE",
+    "spell": {
+      "class": "SummonSpell",
+      "card": "token_the_leviathans_claw"
+    }
+  },
+  "attributes": {
+    "BATTLECRY": true,
+    "CHARGE": true,
+    "CANNOT_ATTACK_HERO_ON_SUMMON": true,
+    "DIVINE_SHIELD": true
+  },
+  "collectible": true,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

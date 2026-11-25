@@ -1,0 +1,35 @@
+{
+  "id": "minion_mindbender_ghursha",
+  "name": "Mindbender Ghur'sha",
+  "baseManaCost": 7,
+  "type": "MINION",
+  "baseAttack": 3,
+  "baseHp": 9,
+  "heroClass": "WARLOCK",
+  "rarity": "FREE",
+  "race": "ABERRATION",
+  "description": "Whenever you discard a card, give your other minions +4/+4.",
+  "trigger": {
+    "eventTrigger": {
+      "class": "DiscardTrigger",
+      "targetPlayer": "SELF"
+    },
+    "spell": {
+      "class": "ConditionalSpell",
+      "spell": {
+        "class": "BuffSpell",
+        "target": "OTHER_FRIENDLY_MINIONS",
+        "attackBonus": 4,
+        "hpBonus": 4
+      },
+      "condition": {
+        "class": "IsDeadCondition",
+        "target": "SELF",
+        "invert": true
+      }
+    }
+  },
+  "collectible": true,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

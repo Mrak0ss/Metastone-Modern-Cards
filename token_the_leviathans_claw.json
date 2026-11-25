@@ -1,0 +1,34 @@
+{
+  "id": "token_the_leviathans_claw",
+  "name": "The Leviathan's Claw",
+  "baseManaCost": 3,
+  "type": "MINION",
+  "baseAttack": 4,
+  "baseHp": 2,
+  "heroClass": "PALADIN",
+  "rarity": "FREE",
+  "race": "MECH",
+  "description": "Rush, Divine Shield. After this attacks, draw a card.",
+  "trigger": {
+    "eventTrigger": {
+      "class": "AfterPhysicalAttackTrigger",
+      "sourcePlayer": "SELF",
+      "targetPlayer": "BOTH",
+      "sourceEntityType": "MINION",
+      "hostTargetType": "IGNORE_OTHER_SOURCES"
+    },
+    "spell": {
+      "class": "DrawCardSpell",
+      "target": "SELF",
+      "value": 1
+    }
+  },
+  "attributes": {
+    "CHARGE": true,
+    "CANNOT_ATTACK_HERO_ON_SUMMON": true,
+    "DIVINE_SHIELD": true
+  },
+  "collectible": false,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

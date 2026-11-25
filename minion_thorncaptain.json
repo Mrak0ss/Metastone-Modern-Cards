@@ -1,0 +1,26 @@
+{
+  "id": "minion_thorncaptain",
+  "name": "Thorncaptain",
+  "baseManaCost": 3,
+  "type": "MINION",
+  "baseAttack": 4,
+  "baseHp": 2,
+  "heroClass": "ANY",
+  "rarity": "FREE",
+  "race": "QUILBOAR",
+  "description": "Whenever a card is added to your hand, gain +1 Health.",
+  "trigger": {
+    "eventTrigger": {
+      "class": "CardReceivedTrigger",
+      "targetPlayer": "SELF"
+    },
+    "spell": {
+      "class": "BuffSpell",
+      "target": "SELF",
+      "hpBonus": 1
+    }
+  },
+  "collectible": true,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

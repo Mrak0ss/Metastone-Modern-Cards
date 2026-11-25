@@ -1,0 +1,27 @@
+{
+  "id": "minion_the_shadow_of_doubt",
+  "name": "The Shadow of Doubt",
+  "baseManaCost": 9,
+  "type": "MINION",
+  "baseAttack": 6,
+  "baseHp": 8,
+  "heroClass": "PRIEST",
+  "rarity": "FREE",
+  "race": "ABERRATION",
+  "description": "Whenever a card is added to your hand, give your minions +4/+5.",
+  "trigger": {
+    "eventTrigger": {
+      "class": "CardReceivedTrigger",
+      "targetPlayer": "SELF"
+    },
+    "spell": {
+      "class": "BuffSpell",
+      "target": "FRIENDLY_MINIONS",
+      "attackBonus": 4,
+      "hpBonus": 5
+    }
+  },
+  "collectible": true,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}
