@@ -1,0 +1,43 @@
+{
+  "id": "minion_ultraviolet_breaker",
+  "name": "Ultraviolet Breaker",
+  "baseManaCost": 3,
+  "type": "MINION",
+  "baseAttack": 3,
+  "baseHp": 2,
+  "heroClass": "SHAMAN",
+  "rarity": "COMMON",
+  "race": "ELEMENTAL",
+  "description": "Battlecry: Deal 3 damage to an enemy minion. Shuffle 3 Asteroids into your deck.",
+  "battlecry": {
+    "targetSelection": "MINIONS",
+    "spell": {
+      "class": "MetaSpell",
+      "spells": [
+        {
+          "class": "DamageSpell",
+          "target": "TARGET",
+          "value": 3
+        },
+        {
+          "class": "ShuffleToDeckSpell",
+          "card": "spell_asteroid_meteor_shaman"
+        },
+        {
+          "class": "ShuffleToDeckSpell",
+          "card": "spell_asteroid_meteor_shaman"
+        },
+        {
+          "class": "ShuffleToDeckSpell",
+          "card": "spell_asteroid_meteor_shaman"
+        }
+      ]
+    }
+  },
+  "attributes": {
+    "BATTLECRY": true
+  },
+  "collectible": true,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

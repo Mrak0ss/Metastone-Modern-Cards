@@ -1,0 +1,19 @@
+{
+  "id": "minion_clan_trainer",
+  "name": "Clan Trainer",
+  "baseManaCost": 3,
+  "type": "MINION",
+  "baseAttack": 4,
+  "baseHp": 4,
+  "heroClass": "ANY",
+  "rarity": "FREE",
+  "description": "Your other minions have +1 Attack.",
+  "aura": {
+    "class": "BuffAura",
+    "target": "OTHER_FRIENDLY_MINIONS",
+    "attackBonus": 1
+  },
+  "collectible": false,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}

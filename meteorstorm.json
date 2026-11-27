@@ -1,0 +1,53 @@
+{
+  "id": "spell_meteor_storm",
+  "name": "Meteor Storm",
+  "baseManaCost": 6,
+  "type": "SPELL",
+  "heroClass": "SHAMAN",
+  "rarity": "RARE",
+  "description": "Deal 5 damage to all minions. Shuffle 5 Asteroids into your deck.",
+  "targetSelection": "NONE",
+  "spell": {
+    "class": "MetaSpell",
+    "spells": [
+      {
+        "class": "DamageSpell",
+        "target": "ALL_MINIONS",
+        "value": 5
+      },
+      {
+        "class": "ShuffleToDeckSpell",
+        "value": 1,
+        "target": "NONE",
+        "card": "spell_asteroid_meteor_shaman"
+      },
+      {
+        "class": "ShuffleToDeckSpell",
+        "value": 1,
+        "target": "NONE",
+        "card": "spell_asteroid_meteor_shaman"
+      },
+      {
+        "class": "ShuffleToDeckSpell",
+        "value": 1,
+        "target": "NONE",
+        "card": "spell_asteroid_meteor_shaman"
+      },
+      {
+        "class": "ShuffleToDeckSpell",
+        "value": 1,
+        "target": "NONE",
+        "card": "spell_asteroid_meteor_shaman"
+      },
+      {
+        "class": "ShuffleToDeckSpell",
+        "value": 1,
+        "target": "NONE",
+        "card": "spell_asteroid_meteor_shaman"
+      }
+    ]
+  },
+  "collectible": true,
+  "set": "CUSTOM",
+  "fileFormatVersion": 1
+}
